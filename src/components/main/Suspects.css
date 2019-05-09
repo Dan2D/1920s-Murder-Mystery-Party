@@ -1,0 +1,15 @@
+
+div.character-info h3 {
+display: inline;
+}
+
+div.profile-img {
+    display: inline-block;
+    margin-right: 1em;
+    vertical-align: middle;
+}
+
+div.character-info h3 {
+    line-height:4em;
+    vertical-align: middle;
+}

@@ -1,0 +1,28 @@
+
+div.home-container {
+    z-index: 1;
+    position: relative;
+    width: 70vw;
+}
+
+div.frosted-glass {
+    position:absolute;
+    width:110%;
+    height:100%;
+    z-index: -1;
+    margin-left: -5.5%;
+    background: rgba(255,255,255,0.3);
+    filter: blur(2.5px)
+}
+/* TODO (ADD FALLBACK FONTs) */
+h2, p {
+    font-family: core-deco;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+p {
+    font-size: 1em;  
+}

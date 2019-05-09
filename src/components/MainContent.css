@@ -1,0 +1,32 @@
+div.mainContent-container {
+    position: relative;
+    padding-top: 15vw;
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    box-sizing: border-box;
+    overflow-y:scroll;
+}  
+
+p, li, h2, h3 {
+    font-family: core-deco;
+}
+/* div.parallax-container {
+    height: 100%;
+    width:100vw;
+    box-sizing: border-box;
+    
+} */
+
+
+
+div.content {
+    position: relative;
+    margin: 50px 0;
+    padding: 10px;
+    z-index: 1;
+    order:1;
+}
