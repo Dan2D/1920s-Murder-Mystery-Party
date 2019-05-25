@@ -2,22 +2,21 @@
 div.footer-container {
     position: relative;
     order: 1;
-    margin-top: 15vh;
+    width: 100vw;
 }
 
 div.position-container {
-    position: absolute;
     display: flex;
     flex-direction:column;
     justify-content: flex-start;
     align-content: flex-start;
-    bottom: 0;
+    margin-left: -6px;
     width: 100%;
 }
 
 img.stars {
     width: 20%;
-    margin-bottom: -15px;
+    margin: 0 0 -15px 15px;
 }
 
 img.hollywood {
@@ -25,12 +24,14 @@ img.hollywood {
     max-height: 15vh;
     align-self: flex-start;
     margin-left:-5px;
+    margin-bottom: -5px;
     z-index: 1;
 }
 
 div.footer-text {
     order: 2;
     z-index: 1; 
+    margin-left:-5px;
     width: 100%;   
     background: #3b3b3b;
     padding-bottom: 12px;

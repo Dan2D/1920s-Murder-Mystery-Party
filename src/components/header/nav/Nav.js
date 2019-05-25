@@ -1,43 +1,59 @@
-import React from "react";
+import React, {Component} from "react";
 import NavLnks from "./NavLnks";
 import NavBtns from "./NavBtns";
 import SubMenu from "./SubMenu";
 import Title from "../Title";
 import "./Nav.css";
 
-class Nav extends React.Component {
+class Nav extends Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            subMenuOpen: false,
+            guideBtnFocus: false,
+        };
+    }
+
+    guideBtnFocusHandler = (state) => {
+        console.log(this.state.guideBtnFocus)
+        this.setState({guideBtnFocus: false, subMenuOpen: false});
+    }
+
+    subMenuClickHandler = () => {
+            this.setState(prevState => ({subMenuOpen: !prevState.subMenuOpen, guideBtnFocus: true}));
+    }
+
+    
+    
+
     componentDidMount() {
         let root = document.documentElement;
         
-        function titleHeight() {       
+        function lightWidth() {       
             let lightWidth = window.innerWidth;
-            console.log(lightWidth);
             return lightWidth
         };
- //TODO(ADJUST THE BG BEHIND NAV TO BLOCK IMAGE AND TEXT)
-        root.style.setProperty("--title-pos",  titleHeight()*(0.057) - 39 + "px");
-        root.style.setProperty("--sub-menu-pos", titleHeight()*(0.08)  + "px");
+
+        root.style.setProperty("--title-pos",  lightWidth()*(0.021) + 8 + "px");
+        root.style.setProperty("--sub-menu-pos", lightWidth()*(0.11) - 30 + "px");
 
         window.addEventListener("resize", e => {
-            let height = titleHeight();
-            console.log(height);
-            root.style.setProperty("--title-pos", height*(0.057) - 39 + "px");
-            root.style.setProperty("--sub-menu-pos", height*(0.08)  + "px");
+            let height = lightWidth();
+            root.style.setProperty("--title-pos", height*(0.021) + 8 + "px");
+            root.style.setProperty("--sub-menu-pos", height*(0.11) - 30 + "px");
         });  
     }
 
-
-
-    render(){        
+    render(props){            
     return(
         <div className="nav-container">
             <nav>
                 <div className="nav-top">
-                    <NavLnks />
-                    <NavBtns />
+                    <NavLnks onClick={this.props.onClick}/>
+                    <NavBtns onBlur={this.guideBtnFocusHandler}  onClick={this.subMenuClickHandler} />
                 </div>
             <div className="nav-bottom">
-                <SubMenu />
+                <SubMenu open={this.state.subMenuOpen && this.state.guideBtnFocus ? "subMenu-container-open" : "subMenu-container"}/>
                 <Title />
             </div>
             </nav>

@@ -1,6 +1,8 @@
-import React from "react";
-
+import React, {useEffect} from "react";
+import "../Suspects.css";
 const Character = props => {
+
+
   //Function to import all images dynamically given Reacts restrictions
   function importAll(r) {
     let images = {};
@@ -23,16 +25,17 @@ const Character = props => {
     backgroundSize: "contain",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    height: "2em",
-    width: "2em"
+    height: "4vw",
+    width: "4vw"
   };
+
+  
 
   return (
     <div>
       <div className="character-container">
         <div className="character-info">
-          <div className="profile-img" style={charImg} />
-          <h3>{props.name}</h3>
+              <button  className="character-title" data-ref={props.status}><div className="profile-img" style={charImg} /><h3>{props.name}</h3></button>
           <hr></hr>
           <ul>
             <li>Age: {props.age}</li>

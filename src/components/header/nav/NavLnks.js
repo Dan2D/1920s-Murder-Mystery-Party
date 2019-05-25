@@ -1,11 +1,11 @@
 import React from "react";
 
-const NavLnks = props => {
+const NavLnks = (props) => {
     return(
         <div className="navLnks-container">
-            <a href="#">HOME</a>
-            <a href="#">NEWS</a>
-            <a href="#">SUSPECTS</a>
+            <a href="#" onClick={() => props.onClick("home")}>HOME</a>
+            <a href="#" onClick={() => props.onClick("news")}>NEWS</a>
+            <a href="#" onClick={() => props.onClick("suspects")}>SUSPECTS</a>
         </div>
     )
 }

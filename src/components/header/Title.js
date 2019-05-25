@@ -5,6 +5,8 @@ import lightFigure from "../../images/bg/flap-shadow.png";
 
 const Title = props => {   
 
+
+    // TODO(CYCLE THROUGH DIFFERENT DOORWAY FIGURES ON TRANSITION)
     return(
     <div className="title-container">
         <div className="light-container">

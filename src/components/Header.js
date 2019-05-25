@@ -5,7 +5,7 @@ import Title from "./header/Title";
 const Header = props => {
     return(
         <div className="header-container">
-            <Nav />
+            <Nav onClick={props.onClick}/>
         </div>
     )
 }

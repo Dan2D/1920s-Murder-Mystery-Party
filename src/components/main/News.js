@@ -1,9 +1,9 @@
 import React from "react";
+import "./News.css";
 
 const News = props => {
-    //TODO(REPLACE BULLET POINTS WITH DASHES)
     return(
-        <div>
+        <div className="news-container">
         <div className="rulesIntro-container">
             <h2>THE PLAN</h2>
             <p>
@@ -44,7 +44,7 @@ const News = props => {
                     should reveal a clue about someone other than themselves.
                     </p>
                     
-                    <p>Two types of clues exist in this game.</p>
+                    <p><strong>Two types of clues exist in this game</strong></p>
                     <ol>
                         <li>
                         A clue about someone other than yourself. <br />

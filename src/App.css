@@ -1,15 +1,10 @@
 
-div.App {
-background: linear-gradient(rgba(12,54,78, 1), rgba(12,54,78, 0.2) 60%)rgba(12,54,78, 0.5);
+:root {
+    --bg-color: rgba(12,54,78);
 }
-/* TODO(ENLARGE HOME GIRL PNG) */
-div.bg-image{
-    content: url("./images/bg/Male-Closeup.png");
-    position: absolute;
-    padding-top: 4vw;
-    bottom:0;
-    right:0;
-    height: 100vh;
-    filter: blur(2px);
-    z-index: -1;
+
+div.App {
+background: var(--bg-color);
+overflow-y: auto;
+z-index:-2;
 }
