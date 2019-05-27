@@ -14,7 +14,7 @@ const Suspects = props => {
 
     return(
         <div className="characters-container">
-            <button className="guide-text" >CLICK ON YOUR CHARACTER TO LEARN THEIR SECRETS!</button>
+            <button className="guide-text" >CLICK ON THE KEYHOLE TO LEARN MORE ABOUT YOUR CHARACTER!</button>
         <div className="victim-container">
             <h2>VICTIM</h2>
             <CharList status="Victim"/>          

@@ -44,3 +44,24 @@ div.content {
     z-index: 1;
     order:1;
 }
+
+button.keyhole {
+    background:none;
+    border:none;
+    position:fixed;
+    bottom: 15px;
+    right: 32px;
+    z-index:5;
+    opacity: 0.5;
+    transition: transform 400ms ease, opacity 400ms ease;
+}
+
+button.keyhole img {
+    height: 5vh;
+}
+
+button.keyhole:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    transition: transform 400ms ease, opacity 400ms ease;
+}

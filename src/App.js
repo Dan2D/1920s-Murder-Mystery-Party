@@ -46,9 +46,13 @@ class App extends Component {
           from={{opacity: 0, transform: 'translateX(100%)'}}
           enter={{opacity: 1, transform: 'translateX(0%)', zIndex: 0}}
           leave={{opacity: 0, transform: 'translateX(-100%)'}}>
-          {content => content === "news" ? props => <div style={props}><img src={newsBg} style={style} alt="detective"/></div> : 
-          content === "suspects" ? props => <div style={props}><img src={suspectsBg} style={style} alt="suspicious man"/></div> : 
-          props => <div style={props}><img src={homeBg} style={style} alt="flapper girl"/></div>}
+            {content => content && (props =>
+              <div style={props}>
+                {content === "news" ? <img src={newsBg} style={style} alt="detective"/> : 
+                content === "suspects" ? <img src={suspectsBg} style={style} alt="suspicious man"/> : 
+                <img src={homeBg} style={style} alt="flapper girl"/>}
+              </div>)
+            }
         </Transition>  
       </div>
     )

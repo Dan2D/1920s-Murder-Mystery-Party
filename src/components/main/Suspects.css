@@ -14,7 +14,7 @@ button.guide-text::before {
     border-right: 7px solid #062435;    
     border-bottom: 5px solid transparent;    
     border-top: 10px solid #062435;    
-    bottom: -15px;
+    bottom: -12px;
 }
 
 button.guide-text {
@@ -40,7 +40,7 @@ button.guide-text:focus {
     opacity: 1;
 }
 
-button.character-title[data-ref=Victim] {
+button.character-title {
     cursor: default;
     border: none;
     background: none;
@@ -48,22 +48,24 @@ button.character-title[data-ref=Victim] {
     padding: 5px;
 }
 
-button.character-title[data-ref=Suspect] {
+/* button.character-title[data-ref=Suspect] {
     cursor: pointer;
+    display: inline;
     border: none;
     background: none;
     color: white;
     padding: 5px;
-    transform: scale(1);
-    transition: transform 400ms ease;
-}
+} */
 
 
-button.character-title[data-ref=Suspect]:hover {
+/* button.character-title[data-ref=Suspect]:hover {
     transform: scale(1.2) translateX(25px);
     transition: transform 400ms ease;
-}
+} */
 
+div.character-info {
+    position: relative;
+}
 
 div.character-info h3 {
 display: inline;
@@ -79,3 +81,4 @@ div.character-info h3 {
     line-height:4em;
     vertical-align: middle;
 }
+
