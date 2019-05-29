@@ -34,13 +34,13 @@ class Nav extends Component {
             return lightWidth
         };
 
-        root.style.setProperty("--title-pos",  lightWidth()*(0.021) + 8 + "px");
-        root.style.setProperty("--sub-menu-pos", lightWidth()*(0.11) - 30 + "px");
+        root.style.setProperty("--title-pos",  lightWidth()*(0.018) + 10 + "px");
+        root.style.setProperty("--sub-menu-pos", lightWidth()*(0.112) - 39 + "px");
 
         window.addEventListener("resize", e => {
             let height = lightWidth();
-            root.style.setProperty("--title-pos", height*(0.021) + 8 + "px");
-            root.style.setProperty("--sub-menu-pos", height*(0.11) - 30 + "px");
+            root.style.setProperty("--title-pos", height*(0.018) + 10 + "px");
+            root.style.setProperty("--sub-menu-pos", height*(0.112) - 39 + "px");
         });  
     }
 

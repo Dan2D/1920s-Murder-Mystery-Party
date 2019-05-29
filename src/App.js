@@ -26,6 +26,7 @@ class App extends Component {
 
 
     render(){
+      const content = this.state.content;
       let style = {
         position: "absolute",
         paddingTop: 4 + "vw",
@@ -35,8 +36,6 @@ class App extends Component {
         opacity: 0.4,
         filter: "blur(" + 2 + "px)",
       }
-      const content = this.state.content;
-
     return (
       <div className="App">
         <Header onClick={this.contentHandler}/>

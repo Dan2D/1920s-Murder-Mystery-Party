@@ -1,7 +1,6 @@
 import React from "react";
-import lightRay from "../../images/bg/light-shape-svg.svg";
+import lightRay from "../../images/bg/Light-Shape.png";
 import lightFigure from "../../images/bg/flap-shadow.png";
-// import "./Title.css"
 
 const Title = props => {   
 

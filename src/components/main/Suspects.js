@@ -5,11 +5,10 @@ import "./Suspects.css";
 const Suspects = props => {
 
     useEffect(() => {
-        let x = document.querySelector("button.guide-text");
+        let charSecretPopUp = document.querySelector("button.guide-text");
         setTimeout(() => {
-            x.focus();
+            charSecretPopUp.focus();
         }, 800);
-        console.log("I'm working");
     })
 
     return(

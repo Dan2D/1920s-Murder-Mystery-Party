@@ -135,27 +135,36 @@ div.subMenu-container, div.subMenu-container-open {
     justify-content: space-between;
     width: 50vw;
     top: var(--sub-menu-pos);
-    right: 15%;
+    right: 45%;
     z-index: 5;
-    transform: translateY(-20px) rotate(-5.5deg);
+    transform: translateY(20px) rotate(-4.3deg);
     transition:  transform 400ms ease-out;
 }
 
-div.subMenu-container a {
-    /* color: #F9E278;  */
+div.subMenu-container a, div.subMenu-container-open a {
+    color: #0c364e;
+    margin: 0 5px;
     opacity: 0;
-    transition: opacity 400ms ease;
+    transition: opacity 200ms ease;
 }
 
 div.subMenu-container-open{
-    transform: translateY(5px) rotate(-5.5deg);
+    transform: translateY(5px) rotate(-4.3deg);
     transition: transform 400ms ease-out;
     visibility: visible;
 }
 
 div.subMenu-container-open a {
+    font-weight: 1000;
     opacity: 1;
-    transition: opacity 400ms ease;
+    transition: opacity 200ms ease, transform 400ms ease;
+}
+
+div.subMenu-container-open a:hover {
+    transform: scale(1.2);
+    transition: transform 400ms ease;
+    text-shadow: none;
+
 }
 
 div.title-container{

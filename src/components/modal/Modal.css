@@ -1,0 +1,95 @@
+/* TODO(FIX WIDTH FOR SMALLER SCREEN) */
+
+div.modal-container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    top: 40vh;
+    background: black;
+    border: 15px solid transparent;
+    border-image: url("../../images/ui/door-slot.png") 50 round;
+    height: 10vh;
+    width: 25vw;
+    z-index: 5;
+    overflow:hidden;
+
+}
+
+div.modal-header {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.modal-header h4 {
+    margin: 2px 18% 2px 0;
+    text-align: center;
+}
+
+div.modal-header button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    display: inline;
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: none;
+    border: none;
+    z-index: 7;
+}
+
+div.modal-body {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+div.modal-body input {
+    width: 80%;
+}
+
+button.modal-submit {
+    margin: 5px;
+    color:white;
+    background: rgba(255,255,255,0.3);
+    border: none;
+    transition: font-weight 400ms ease;
+}
+
+button.modal-submit:hover {
+    font-weight: bolder;
+    transition: font-weight 400ms ease;
+}
+
+div.modal-container.open img.door-img {
+    position: absolute;
+    max-height: 100%;
+    min-width: 100%;
+    z-index:5;
+    transform: translateX(20vw);
+    transition: transform 800ms ease 1000ms;
+}
+
+div.modal-container.closed img.door-img {
+    position: absolute;
+    max-height: 100%;
+    min-width: 100%;
+    z-index:5;
+    transition: transform 800ms ease;
+}
+
+div.modal-container.closed {
+    opacity: 0;
+    transition: opacity 400ms ease 1000ms;
+}
+
+div.modal-container.open {
+    opacity: 1;
+    transition: opacity 400ms ease;
+}

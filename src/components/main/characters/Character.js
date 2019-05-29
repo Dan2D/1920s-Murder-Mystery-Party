@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {useSpring, animated} from "react-spring";
-import ModalPass from "../../Modal";
+import ModalPass from "../../modal/Modal";
 import "../Suspects.css";
 const Character = props => {
 
@@ -9,7 +9,7 @@ const Character = props => {
   function importAll(r) {
     let images = {};
     r.keys().map((item) => {
-      images[item.replace("./", "")] = r(item);
+      return images[item.replace("./", "")] = r(item);
     });
     return images;
   }
@@ -65,7 +65,7 @@ const Character = props => {
           </ul>
         </div>
       </div>
-      <div className="secret-container" style={{display: "none"}}>
+      <div className="secret-container" data-char={props.name} style={{display: "none"}}>
         <h4>Secret Character Info</h4>
         <p>{props.secret}</p>
         <h5>Costume Guidelines</h5>
