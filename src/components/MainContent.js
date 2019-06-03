@@ -9,7 +9,6 @@ import "./MainContent.css"
 
 function MainContent(props) {
     const state = props.state;
-    //TODO(SECURE WAY TO HANDLE PASSWORD STATE??)
 
     useEffect(() => {
         let content = document.querySelector("div.mainContent-container");

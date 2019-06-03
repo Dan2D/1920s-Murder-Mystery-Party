@@ -9,7 +9,7 @@ div.modal-container {
     top: 40vh;
     background: black;
     border: 15px solid transparent;
-    border-image: url("../../images/ui/door-slot.png") 50 round;
+    border-image: url("../../images/ui/door-slot.jpg") 50 round;
     width: 45vw;
     max-width: 500px;
     padding: 15px 0;
@@ -97,3 +97,4 @@ div.modal-container.open {
     opacity: 1;
     transition: opacity 400ms ease;
 }
+

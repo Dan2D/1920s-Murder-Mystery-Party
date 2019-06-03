@@ -3,6 +3,12 @@
     --bg-color: rgba(12,54,78);
 }
 
+@font-face {
+    font-family: "core-deco";
+    font-display: swap;
+    src: url("./fonts/Core-Deco.ttf")
+}
+
 div.App {
 background: var(--bg-color);
 overflow-y: auto;

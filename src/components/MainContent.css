@@ -14,7 +14,7 @@ div.mainContent-container {
 }  
 
 p, li, h2, h3, button {
-    font-family: core-deco;
+    font-family: core-deco, 'Courier New', Courier, monospace;
 }
 /* TODO(FIX FONT-SIZE, NEEDS TO BE SMALLER, CREATE HEIRARCHY) */
 p, li {
@@ -41,3 +41,6 @@ div.content {
     z-index: 1;
     order:1;
 }
+
+
+

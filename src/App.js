@@ -16,6 +16,15 @@ class App extends Component {
       };
     }
 
+    componentDidMount() {
+      const bgImgs = [homeBg, newsBg, suspectsBg];
+
+      bgImgs.forEach((picture) => {
+        const img = new Image();
+        img.src = picture.src;
+      })
+    }
+
     contentHandler = (pageState) => {
         var main = document.getElementsByClassName("App");
         main[0].scrollTo(0,0);

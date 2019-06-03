@@ -33,6 +33,7 @@ button.guide-text {
     color: white;
     background: #062435;
     border: none;
+    outline: none;
     cursor: default;
     height: auto;
     width: 23vw;

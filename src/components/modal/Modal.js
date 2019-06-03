@@ -1,5 +1,5 @@
 import React from "react";
-import doorSlot from "../../images/ui/door-slot.png";
+import doorSlot from "../../images/ui/door-slot.jpg";
 import "./Modal.css"
 
 // TODO(CHANGE ALL EVENT HANDLERS NAMING TO START WITH handle)
@@ -16,10 +16,10 @@ function ModalPass (props) {
       <img className="door-img" src={doorSlot} alt="door slide"/>
       <div className="modal-header">
         <h4>WHAT'S THE PASSWORD?</h4>
-        <button onClick={(e) => props.onClose(e)}><span aria-hidden="true">X</span></button>
+        <button aria-label="close" onClick={(e) => props.onClose(e)}><span aria-hidden="true">X</span></button>
       </div>
       <div className="modal-body">
-        <input type="text" onKeyDown={(e) => handleInput(e)}/>
+        <input type="text" label="password-input" onKeyDown={(e) => handleInput(e)}/>
         <button className="modal-submit" onClick={() => props.onClick() }>SUBMIT</button>
       </div>
     </div>
