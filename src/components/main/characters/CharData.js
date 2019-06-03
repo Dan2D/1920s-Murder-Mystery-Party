@@ -76,7 +76,7 @@ const charData = [
       Galvanized by the overwhelming support from her large family and loyal group of small town fans, you've worked hard not to dissapoint them. You recenlty caught a break and were asked to play a role in a real Hollywood movie and are quickly moving up the stardom ranks!
   
       There's just one thing... there is no Betty Sue Wilson.
-      Your real name is Ramona Simpson`,
+      Your real name is Ramona Simpson(See Below)`,
       costume: `Flapper outfit, headband, A little rough around the edges 
       (These are just guidelines, please interpret the characters as you see fit!)`,
       status: "Suspect"
@@ -92,9 +92,7 @@ const charData = [
       secret: `You are an only child born out of wedlock in a messy affair with Arthur J McCutcheon himself. Though as soon as he learned your mother, Dolores Simpson, was pregnant, he kicked her to the curb and denied any involvement. This made your mother understandably furious and she swore she'd have her revenge on the man she once loved. Your mother cultivated her hatred of McCutcheon in you and you readily took on her cause.
   
       Your whole life has known one purpose, to take revenge upon your father that abandoned you and your family. In order to get close to Arthur you've taken on the persona of Betty Sue Wilson and have been having a somewhat discreet affair with Matthew Montgomery. Your "relationship" with Matt paid off and have recently secured employment at Superior Studios as an up and coming actress, with Matt's help of course... Matt is just tool in your scheme, you don't really care about him or his feelings.`,
-      costume: `Flapper outfit, headband, A little rough around the edges 
-      (These are just guidelines, please interpret the characters as you see fit!)`,
-      status: "Double"
+      status: "Suspect"
     },
     {
       name: "Olaf Hendrikssen",

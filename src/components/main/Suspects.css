@@ -51,7 +51,7 @@ button.guide-text:focus {
     opacity: 1;
 }
 
-button.character-title[data-ref=Victim] {
+div.character-info[data-status=Victim]>button{
     cursor: default;
 }
 

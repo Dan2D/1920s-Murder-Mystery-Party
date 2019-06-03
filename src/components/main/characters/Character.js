@@ -43,10 +43,12 @@ const Character = props => {
                      show={modalStatus}/>
         </animated.div>
       <div className="character-container">
-        <div className="character-info">
-              <button className="character-title" 
-                      data-ref={props.status} 
-                      onClick={() => props.onClick()}>
+        <div className="character-info"
+             data-char={props.name}
+             data-status={props.status}  
+             style={props.name === "Ramona Simpson" ? {display: 'none'} : null}>
+              <button className="character-title"    
+                      onClick={props.status === "Suspect" ? () => {props.onClick()} : null}>
                   <div className="profile-img"
                        style={charImg} />
                   <h3>{props.name}</h3>
@@ -62,13 +64,13 @@ const Character = props => {
         </div>
       </div>
       <div className="secret-container" 
-           data-char={props.name}
-           style={props.status === "Double" ? {display: 'none'} : null}>
+           data-char={props.name}>
         <h4>Secret Character Info</h4>
         <p>{props.secret}</p>
         <hr/>
-        <h4>Costume Guidelines</h4>
-        <p>{props.costume}</p>
+        {props.costume ? <h4>Costume Guidelines</h4> : null}
+        <p>{props.costume}</p> 
+
       </div>
     </div>
   );

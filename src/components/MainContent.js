@@ -38,7 +38,12 @@ function MainContent(props) {
             var secretTxt = document.querySelectorAll("div.secret-container");
             for (let i = 0; i < passwordArr.length; i++){
                 if (password === passwordArr[i]) {
-                    secretTxt[i+1].className = "secret-container open";                   
+                    secretTxt[i+1].className = "secret-container open"; 
+                    if (password === "double agent"){
+                        document.querySelector('div.character-info[data-char="Ramona Simpson"]').style.display = "block";
+                        secretTxt[i+2].className = "secret-container open"; 
+                    }
+                                     
                 }
             }
         }        

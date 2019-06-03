@@ -20,7 +20,7 @@ const Suspects = props => {
         </div>
         <div className="suspects-container">
             <h2>SUSPECTS</h2>    
-            <CharList status="Suspect" onClick={() => props.onClick()}/>                
+            <CharList status="Suspect" onClick={() => {props.onClick()}}/>                
             </div>
         </div>
     )

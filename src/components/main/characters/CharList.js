@@ -6,7 +6,8 @@ const CharList = props => {
   return (
     <div>
       {charData.map(charProps => (
-        props.status === charProps.status ? <Character {...charProps} onClick={() => props.onClick()} /> : null
+        props.status === charProps.status ? 
+        <Character key={props.name} {...charProps} onClick={() => props.onClick()} /> : null
       ))}
     </div>
   );
