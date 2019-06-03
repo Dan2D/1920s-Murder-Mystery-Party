@@ -1,15 +1,7 @@
-import React, {useState} from "react";
-import {useSpring, animated} from "react-spring";
-import ModalPass from "../../modal/Modal";
+import React from "react";
+
 import "../Suspects.css";
 const Character = props => {
-  const [modalStatus, setModal] = useState(false);
-  const [aniProps, setAniProps] = useSpring(() => ({opacity: 0}));
-
-  function modalClose() {setModal(false);}
-
-  setAniProps({opacity: modalStatus ? 1 : 0});
-
   //Function to import all images dynamically given Reacts restrictions
   function importAll(r) {
     let images = {};
@@ -38,10 +30,6 @@ const Character = props => {
 
   return (
     <div>
-        <animated.div style={aniProps}>
-          <ModalPass onClick={modalClose} 
-                     show={modalStatus}/>
-        </animated.div>
       <div className="character-container">
         <div className="character-info"
              data-char={props.name}
