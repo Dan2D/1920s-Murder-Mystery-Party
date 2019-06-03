@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "55b43fc1be74e3c639ca646aeb735c44",
+    "revision": "59869bb63d62046aa9c61929c1e27c1e",
     "url": "/1920s-Murder-Mystery-Party/index.html"
   },
   {
-    "revision": "b8750eefdb7da2e4953c",
+    "revision": "493676c385e1c2dd91a7",
     "url": "/1920s-Murder-Mystery-Party/static/css/main.af6c7bda.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/1920s-Murder-Mystery-Party/static/js/2.afde72b2.chunk.js"
   },
   {
-    "revision": "b8750eefdb7da2e4953c",
-    "url": "/1920s-Murder-Mystery-Party/static/js/main.1fa8fce0.chunk.js"
+    "revision": "493676c385e1c2dd91a7",
+    "url": "/1920s-Murder-Mystery-Party/static/js/main.693a364a.chunk.js"
   },
   {
     "revision": "beff297e898575187a57",
@@ -32,16 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/1920s-Murder-Mystery-Party/static/media/Light-Shape.f40bf7d0.png"
   },
   {
-    "revision": "a4592c0502bdeaf4d150654a14a87bc9",
-    "url": "/1920s-Murder-Mystery-Party/static/media/Male-Closeup.a4592c05.png"
+    "revision": "2f0f37d0d216c59765f19fd066b0523d",
+    "url": "/1920s-Murder-Mystery-Party/static/media/Male-Closeup2.2f0f37d0.png"
   },
   {
-    "revision": "8139def08327a00c5ead87e82bab3e00",
-    "url": "/1920s-Murder-Mystery-Party/static/media/Poster-Girl.8139def0.png"
+    "revision": "d4c6a78c24e9c84ceb3b54b2cc2b6933",
+    "url": "/1920s-Murder-Mystery-Party/static/media/Poster-Girl2.d4c6a78c.png"
   },
   {
-    "revision": "548233c893abbf46498a77d3d4acae74",
-    "url": "/1920s-Murder-Mystery-Party/static/media/Poster-Rules.548233c8.png"
+    "revision": "7ac4858974f84cac6f38bb2061da2805",
+    "url": "/1920s-Murder-Mystery-Party/static/media/Poster-Rules2.7ac48589.png"
   },
   {
     "revision": "2daa63258587ec7c4016e10ac2c16804",
