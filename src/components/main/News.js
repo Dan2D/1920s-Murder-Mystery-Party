@@ -35,7 +35,9 @@ const News = props => {
                         it would be beneficial to read through the news clipping and
                         your character backgrounds as well!
                     </p>
+                    <br/>
                     <p><strong>DO NOT TURN PAST ANY PAGE THAT IS MARKED</strong></p>
+                    <br/>
                     <p>
                     The Game is sectioned into rounds and starts with Round 1.
                      <br/>
@@ -43,7 +45,7 @@ const News = props => {
                     avaialable to each character. To begin a round, one player
                     should reveal a clue about someone other than themselves.
                     </p>
-                    
+                    <br/>
                     <p><strong>Two types of clues exist in this game</strong></p>
                     <ol>
                         <li>
@@ -85,11 +87,10 @@ const News = props => {
                     out parts of the truth or trying to change subjects, but one
                     exception is that <strong>YOU MAY NOT LIE!</strong> 
                     <br /><br />
-                    <li>
                     Occasionally you may be asked a question that you don't have
                     the answer to, you may reply with the codephrase "That's a
                     very good question." 
-                    </li>
+                    <br /><br />
                     This should let the other players know that none of your
                     clues so far give an answer to that question. (You can't use
                     this phrase for any other reason) Some clues may be inside
@@ -107,7 +108,7 @@ const News = props => {
                     <li>
                     After the 4th Round the players have all the clues necessary
                     to solve the murder. 
-                    <br />
+                    <br /><br />
                     Following a short period of discussing evidence among themselves, each player
                     should give an answer as to who they think is the culprit(s)
                     of the murder.
@@ -117,7 +118,7 @@ const News = props => {
                     Once everyone has given their answers the host will instruct
                     the players to turn to the last page in their booklet and
                     read from the section marked SOLUTION. 
-                    <br />
+                    <br /><br />
                     Each player has a part of the solution marked 1 through 8 and
                     should read their part in order.
                     </li>

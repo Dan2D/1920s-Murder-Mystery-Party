@@ -1,13 +1,17 @@
 div.news-container {
     width: 100vw;
-    background: rgba(0,0,0,0.5);
-    padding-bottom: 5%;
 }
 
 .news-container h2 {
     margin-left: 10%;
+    text-decoration: underline;
 }
 
 .news-container p, .news-container li {
     margin: 0 10%;
+}
+
+.rulesIntro-container, .rulesSpec-container {
+    background: rgba(0,0,0,0.5);
+    padding-bottom: 5%;
 }

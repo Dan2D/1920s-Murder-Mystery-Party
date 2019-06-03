@@ -13,27 +13,30 @@ class Nav extends Component {
         };
     }
 
-    isGuideBtnFocusedHandler = () => {this.setState({isSubMenuOpen: false})}
+    componentDidMount() {
+        let root = document.documentElement;  
+        function winWidth() {       
+            let winWidth = window.innerWidth;
+            return winWidth
+        };
+
+        root.style.setProperty("--title-pos",  winWidth()*(0.018) + 10 + "px");
+        root.style.setProperty("--sub-menu-pos", winWidth()*(0.112) - 39 + "px");
+
+        window.addEventListener("resize", e => {
+            let width = winWidth();
+            root.style.setProperty("--title-pos", width*(0.018) + 10 + "px");
+            root.style.setProperty("--sub-menu-pos", width*(0.112) - 39 + "px");
+        });  
+    }
+
+
+    isGuideBtnFocusedHandler = () => {
+        this.setState({isSubMenuOpen: false})
+    }
 
     subMenuClickHandler = () => {
         this.setState(prevState => ({isSubMenuOpen: !prevState.isSubMenuOpen}));
-    }
-
-    componentDidMount() {
-        let root = document.documentElement;  
-        function lightWidth() {       
-            let lightWidth = window.innerWidth;
-            return lightWidth
-        };
-
-        root.style.setProperty("--title-pos",  lightWidth()*(0.018) + 10 + "px");
-        root.style.setProperty("--sub-menu-pos", lightWidth()*(0.112) - 39 + "px");
-
-        window.addEventListener("resize", e => {
-            let height = lightWidth();
-            root.style.setProperty("--title-pos", height*(0.018) + 10 + "px");
-            root.style.setProperty("--sub-menu-pos", height*(0.112) - 39 + "px");
-        });  
     }
 
     render(){            
