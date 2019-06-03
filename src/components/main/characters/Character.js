@@ -3,7 +3,12 @@ import {useSpring, animated} from "react-spring";
 import ModalPass from "../../modal/Modal";
 import "../Suspects.css";
 const Character = props => {
+  const [modalStatus, setModal] = useState(false);
+  const [aniProps, setAniProps] = useSpring(() => ({opacity: 0}));
 
+  function modalClose() {setModal(false);}
+
+  setAniProps({opacity: modalStatus ? 1 : 0});
 
   //Function to import all images dynamically given Reacts restrictions
   function importAll(r) {
@@ -30,31 +35,22 @@ const Character = props => {
     height: "4vw",
     width: "4vw"
   };
-  const [modalStatus, setModal] = useState(false);
-
-  function modalOpen() {
-    setModal(!modalStatus);
-  }
-
-  function modalClose() {
-    setModal(false);
-    console.log("testing")
-  }
-
-  const [aniProps, set] = useSpring(() => ({opacity: 0}));
-
-  set({opacity: modalStatus ? 1 : 0});
-
 
   return (
     <div>
         <animated.div style={aniProps}>
-          <ModalPass onClick={modalClose} show={modalStatus}/>
+          <ModalPass onClick={modalClose} 
+                     show={modalStatus}/>
         </animated.div>
       <div className="character-container">
-
         <div className="character-info">
-              <button  className="character-title" data-ref={props.status} onClick={modalOpen}><div className="profile-img" style={charImg} /><h3>{props.name}</h3></button>
+              <button className="character-title" 
+                      data-ref={props.status} 
+                      onClick={() => props.onClick()}>
+                  <div className="profile-img"
+                       style={charImg} />
+                  <h3>{props.name}</h3>
+              </button>
           <hr></hr>
           <ul>
             <li>Age: {props.age}</li>
@@ -65,10 +61,13 @@ const Character = props => {
           </ul>
         </div>
       </div>
-      <div className="secret-container" data-char={props.name} style={{display: "none"}}>
+      <div className="secret-container" 
+           data-char={props.name}
+           style={props.status === "Double" ? {display: 'none'} : null}>
         <h4>Secret Character Info</h4>
         <p>{props.secret}</p>
-        <h5>Costume Guidelines</h5>
+        <hr/>
+        <h4>Costume Guidelines</h4>
         <p>{props.costume}</p>
       </div>
     </div>

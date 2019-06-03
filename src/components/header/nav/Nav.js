@@ -9,26 +9,18 @@ class Nav extends Component {
     constructor(props){
         super(props);
         this.state = {
-            subMenuOpen: false,
-            guideBtnFocus: false,
+            isSubMenuOpen: false,
         };
     }
 
-    guideBtnFocusHandler = (state) => {
-        console.log(this.state.guideBtnFocus)
-        this.setState({guideBtnFocus: false, subMenuOpen: false});
-    }
+    isGuideBtnFocusedHandler = () => {this.setState({isSubMenuOpen: false})}
 
     subMenuClickHandler = () => {
-            this.setState(prevState => ({subMenuOpen: !prevState.subMenuOpen, guideBtnFocus: true}));
+        this.setState(prevState => ({isSubMenuOpen: !prevState.isSubMenuOpen}));
     }
 
-    
-    
-
     componentDidMount() {
-        let root = document.documentElement;
-        
+        let root = document.documentElement;  
         function lightWidth() {       
             let lightWidth = window.innerWidth;
             return lightWidth
@@ -44,22 +36,21 @@ class Nav extends Component {
         });  
     }
 
-    render(props){            
+    render(){            
     return(
         <div className="nav-container">
             <nav>
                 <div className="nav-top">
                     <NavLnks onClick={this.props.onClick}/>
-                    <NavBtns onBlur={this.guideBtnFocusHandler}  onClick={this.subMenuClickHandler} />
+                    <NavBtns onClick={this.subMenuClickHandler} />
                 </div>
-            <div className="nav-bottom">
-                <SubMenu open={this.state.subMenuOpen && this.state.guideBtnFocus ? "subMenu-container-open" : "subMenu-container"}/>
-                <Title />
-            </div>
+                <div className="nav-bottom">
+                    <SubMenu open={this.state.isSubMenuOpen ? "subMenu-container-open" : "subMenu-container"}/>
+                    <Title />
+                </div>
             </nav>
         </div>
-    )
-}
+    )}
 }
 
 export default Nav;

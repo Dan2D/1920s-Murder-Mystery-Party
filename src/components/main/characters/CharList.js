@@ -1,14 +1,12 @@
 import React from "react";
 import charData from "./CharData";
 import Character from "./Character";
-// import "../../css/pageStyles.css";
-
 
 const CharList = props => {
   return (
     <div>
-      {charData.map(char => (
-        props.status === char.status ? <Character {...char} /> : null
+      {charData.map(charProps => (
+        props.status === charProps.status ? <Character {...charProps} onClick={() => props.onClick()} /> : null
       ))}
     </div>
   );

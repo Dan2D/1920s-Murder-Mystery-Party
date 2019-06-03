@@ -16,12 +16,11 @@ class App extends Component {
       };
     }
 
-     contentHandler = (pageState) => {
-      let main = document.getElementsByClassName("App");
-      
-      main[0].scrollTo(0,0);
-      var backgroundImg = pageState === "news" ? newsBg : pageState === "suspects" ? suspectsBg : homeBg;
-      this.setState({content: pageState, bg: backgroundImg});
+    contentHandler = (pageState) => {
+        var main = document.getElementsByClassName("App");
+        main[0].scrollTo(0,0);
+        var backgroundImg = pageState === "news" ? newsBg : pageState === "suspects" ? suspectsBg : homeBg;
+        this.setState({content: pageState, bg: backgroundImg});
     }
 
 

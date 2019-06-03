@@ -1,4 +1,13 @@
 div.news-container {
-    width: 60%;
-    padding-left: 15px;
+    width: 100vw;
+    background: rgba(0,0,0,0.5);
+    padding-bottom: 5%;
+}
+
+.news-container h2 {
+    margin-left: 10%;
+}
+
+.news-container p, .news-container li {
+    margin: 0 10%;
 }

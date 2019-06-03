@@ -8,19 +8,19 @@ const Suspects = props => {
         let charSecretPopUp = document.querySelector("button.guide-text");
         setTimeout(() => {
             charSecretPopUp.focus();
-        }, 800);
+        }, 500);
     })
 
     return(
         <div className="characters-container">
-            <button className="guide-text" >CLICK ON THE KEYHOLE TO LEARN MORE ABOUT YOUR CHARACTER!</button>
+            <button className="guide-text" >CLICK ON YOUR CHARACTER TO LEARN THEIR SECRETS!</button>
         <div className="victim-container">
             <h2>VICTIM</h2>
             <CharList status="Victim"/>          
         </div>
         <div className="suspects-container">
             <h2>SUSPECTS</h2>    
-            <CharList status="Suspect"/>                
+            <CharList status="Suspect" onClick={() => props.onClick()}/>                
             </div>
         </div>
     )

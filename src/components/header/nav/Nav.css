@@ -153,9 +153,9 @@ div.subMenu-container-open{
     transition: transform 400ms ease-out;
     visibility: visible;
 }
-
+/* TODO(GET NEW BOLDER FONT FOR SUBMENU LNKS) */
 div.subMenu-container-open a {
-    font-weight: 1000;
+    font-weight: bolder;
     opacity: 1;
     transition: opacity 200ms ease, transform 400ms ease;
 }
@@ -169,13 +169,11 @@ div.subMenu-container-open a:hover {
 
 div.title-container{
     position: relative;
-    height: 25vh;
     width:100%;
 }
 
 div.light-container {
     position:relative;
-    height:100%;
     width:100%;
 }
 

@@ -1,18 +1,15 @@
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 import Footer from "./Footer";
 import Home from "./main/Home";
 import News from "./main/News";
 import Suspects from "./main/Suspects";
 import PasswordModal from "./modal/Modal";
-import PasswordBtn from "./modal/PasswordBtn";
 import {Transition} from "react-spring/renderprops";
 import "./MainContent.css"
 
 function MainContent(props) {
     const state = props.state;
     //TODO(SECURE WAY TO HANDLE PASSWORD STATE??)
-    const [password, setPassword] = useState("");
-    let tempPassword = "";
 
     useEffect(() => {
         let content = document.querySelector("div.mainContent-container");
@@ -23,30 +20,36 @@ function MainContent(props) {
     function modalHandle() {
         let modal = document.querySelector("div.modal-container");
         modal.className = "modal-container open";
-        modal.querySelector('input').focus();
+        modal.querySelector("input").focus();
     }
 
     function modalClose(e) {
         let modal = document.querySelector("div.modal-container");
-        e.target.value = "";
-        setPassword("");
+        let modalInput = document.querySelector("div.modal-body>input");
+        modalInput.value = "";
         modal.className = "modal-container closed"; 
       }
 
-    function passwordInputHandler(inputTxt) {
-        return tempPassword = inputTxt;
-      }
-
-      function passwordSubmitHandler() {
-          setPassword(tempPassword);
-          console.log(password);
-          tempPassword = "";
-          return tempPassword;
-      }
+    function passwordSubmitHandler() {
+        let password = document.querySelector("div.modal-body>input").value;
+        password = password.toLowerCase();
+        let passwordArr=["shhh", "dope fiend", "scarlet songbird", "double agent", "akvavit", "cancelled stamp", "fatal attraction", "clothesline", "heavy sugar", "heebie jeebies"];
+        function passwordCheck(password) {
+            var secretTxt = document.querySelectorAll("div.secret-container");
+            for (let i = 0; i < passwordArr.length; i++){
+                if (password === passwordArr[i]) {
+                    secretTxt[i+1].className = "secret-container open";                   
+                }
+            }
+        }        
+        passwordCheck(password);
+        modalClose();
+    }
 
         return(
             <div className="mainContent-container">
-                <PasswordModal onClick={passwordSubmitHandler} onInput={passwordInputHandler} onBlur={modalClose}/>
+                <PasswordModal onClick={passwordSubmitHandler} 
+                               onClose={modalClose}/>
                 <div className="content">
                     <Transition
                         items={state}
@@ -55,13 +58,12 @@ function MainContent(props) {
                         leave={{transform: 'translateX(-110%)'}}>
                         {state => state && (props => 
                         <div style={props}>
-                            {state === "news" ? <News /> : state === "suspects" ? <Suspects password={password}/> : <Home />}
+                            {state === "news" ? <News /> : state === "suspects" ? <Suspects onClick={modalHandle}/> : <Home />}
                             <Footer />
                         </div>)
                         }
                     </Transition>
                 </div>
-                {state === "suspects" ? <PasswordBtn onClick={modalHandle}/> : null} 
             </div>
         )
 }

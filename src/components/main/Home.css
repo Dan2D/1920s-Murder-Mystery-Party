@@ -2,8 +2,9 @@
 div.home-container {
     z-index: 1;
     position: relative;
-    width: 70vw;
-    padding: 15px;
+    width: 100vw;
+    background: rgba(0,0,0,0.5);
+    padding-bottom: 5%;
 }
 
 div.frosted-glass {
@@ -16,14 +17,12 @@ div.frosted-glass {
     filter: blur(2.5px)
 }
 /* TODO (ADD FALLBACK FONTs) */
-h2, p {
-    font-family: core-deco;
-}
-
-h2 {
+.home-container h2 {
     text-decoration: underline;
+    margin-left: 5%;
 }
 
-p {
-    font-size: 1em;  
+.home-container p {
+    font-size: 1em;
+    margin: 0 5%;  
 }
