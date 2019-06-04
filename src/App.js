@@ -35,19 +35,20 @@ class App extends Component {
 
     render(){
       const content = this.state.content;
+      const height = document.documentElement.clientHeight;
       let style = {
-        position: "absolute",
+        position: "fixed",
         paddingTop: 4 + "vw",
-        bottom: 0,
+        top: 45 + "px",
         right:  0,
-        height: 90 + "vh",
+        height: height - 65,
         opacity: 0.4,
         filter: "blur(" + 2 + "px)",
       }
     return (
       <div className="App">
         <Header onClick={this.contentHandler} content={this.state.content}/>
-        <MainContent content={this.state.content}/>
+        
         <Transition
           items={content}
           from={{opacity: 0, transform: 'translateX(100%)'}}
@@ -61,6 +62,7 @@ class App extends Component {
               </div>)
             }
         </Transition>  
+        <MainContent content={this.state.content}/>
       </div>
     )
   }

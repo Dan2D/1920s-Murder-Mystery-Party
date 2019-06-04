@@ -46,7 +46,7 @@ div.content {
 @media only screen and (min-width : 600px) and  (max-width : 980px) {
     
     p, li, h2, h3, button {
-        line-height: 2.5vh;
+        line-height: 23px;
     }
 
     p, li {
@@ -57,7 +57,7 @@ div.content {
 @media only screen and (max-width: 468px) {
    
     p, li, h2, h3, button {
-        line-height: 2.5vh;
+        line-height: 18px;
     }
 
     p, li {

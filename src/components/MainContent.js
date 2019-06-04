@@ -13,12 +13,6 @@ function MainContent(props) {
     useEffect(() => {
         let content = document.querySelector("div.mainContent-container");
         content.scrollTo(0,0);
-        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        document.documentElement.style.width = w;
-        document.documentElement.style.height = h;
-        document.querySelector("body").style.width = w;
-        document.querySelector("body").style.height = h;
       }
     );
 //----------------FUNCTIONS--------------------//
@@ -54,6 +48,7 @@ function MainContent(props) {
         }        
         passwordCheck(password);
         modalClose();
+        window.focus();
     }
 
         return(

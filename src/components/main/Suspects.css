@@ -96,9 +96,17 @@ div.secret-container p {
 
 @media only screen and (max-width: 468px){
 
-    div.profile-img{
+    div.profile-img {
         min-height: 35px;
         min-width: 35px;
+    }
+
+    div.character-info li {
+        line-height: 18px;
+    }
+
+    div.secret-container p {
+        line-height: 18px;
     }
 }
 
