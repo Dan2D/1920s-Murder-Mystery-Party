@@ -47,8 +47,7 @@ function MainContent(props) {
             }
         }        
         passwordCheck(password);
-        modalClose();
-        window.focus();
+        modalClose(); 
     }
 
         return(

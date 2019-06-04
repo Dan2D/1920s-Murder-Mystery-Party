@@ -8,6 +8,7 @@ function ModalPass (props) {
 
   function handleInput(e) {
     let status =  e.keyCode === 13 ? "submit" : e.keyCode === 27 ? "exit" : null ;
+    if (e.keyCode === 13){e.currentTarget.blur();}
     return status === "submit" ? props.onClick() : status === "exit" ? props.onClose() : null;
   }
 
