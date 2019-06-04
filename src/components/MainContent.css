@@ -1,3 +1,6 @@
+:root{
+    --client-height: 100vh;
+}
 
 div.mainContent-container {
     font-family: core-deco;
@@ -63,6 +66,10 @@ div.content {
 
     p, li {
         font-size: 15px;
+    }
+
+    div.mainContent-container {
+        height: var(--client-height);
     }
 
 }

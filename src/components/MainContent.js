@@ -4,7 +4,7 @@ import Home from "./main/Home";
 import News from "./main/News";
 import Suspects from "./main/Suspects";
 import PasswordModal from "./modal/Modal";
-import {Transition} from "react-spring/renderprops";
+import {Transition, animated} from "react-spring/renderprops";
 import "./MainContent.css"
 
 function MainContent(props) {
@@ -13,6 +13,8 @@ function MainContent(props) {
     useEffect(() => {
         let content = document.querySelector("div.mainContent-container");
         content.scrollTo(0,0);
+        let height = document.documentElement.clientHeight;
+        document.documentElement.style.setProperty("--client-height", height + 5 + "px");
       }
     );
 //----------------FUNCTIONS--------------------//
@@ -32,7 +34,7 @@ function MainContent(props) {
     function passwordSubmitHandler() {
         let password = document.querySelector("div.modal-body>input").value;
         password = password.toLowerCase();
-        let passwordArr=["shhh", "dope fiend", "scarlet songbird", "double agent", "akvavit", "cancelled stamp", "fatal attraction", "clothesline", "heavy sugar", "heebie jeebies"];
+        let passwordArr=["shhh", "dope fiend", "scarlet songbird", "double agent", "evil twin", "akvavit", "cancelled stamp", "fatal attraction", "clothesline", "heavy sugar", "heebie jeebies"];
         function passwordCheck(password) {
             var secretTxt = document.querySelectorAll("div.secret-container");
             for (let i = 0; i < passwordArr.length; i++){
@@ -42,6 +44,7 @@ function MainContent(props) {
                         document.querySelector('div.character-info[data-char="Ramona Simpson"]').style.display = "block";
                         secretTxt[i+2].className = "secret-container open"; 
                     }
+
                                      
                 }
             }
@@ -56,15 +59,16 @@ function MainContent(props) {
                                onClose={modalClose}/>
                 <div className="content">
                     <Transition
+                        native
                         items={content}
                         from={{transform: 'translateX(100%)'}}
                         enter={{transform: 'translateX(0%)', position: 'absolute', top: 0}}
                         leave={{transform: 'translateX(-110%)'}}>
                         {content => content && (props => 
-                        <div style={props}>
+                        <animated.div style={props}>
                             {content === "news" ? <News /> : content === "suspects" ? <Suspects onClick={modalHandle}/> : <Home />}
                             <Footer />
-                        </div>)
+                        </animated.div>)
                         }
                     </Transition>
                 </div>

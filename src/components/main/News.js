@@ -24,9 +24,8 @@ const News = props => {
                 murderers...) to justice. At some point during the night before
                 the end of the 4th round, the murderer(s) will be told who he /
                 she / they are.
-                <br/><br/>
-                YOU ARE GUILTY UNTIL PROVEN INNOCENT!
             </p>
+            <p style={{textAlign: "center"}}><strong>YOU ARE GUILTY UNTIL PROVEN INNOCENT!</strong></p>    
         </div>
         <div className="rulesSpec-container">
             <h2>THE RULES</h2>
@@ -36,7 +35,7 @@ const News = props => {
                         your character backgrounds as well!
                     </p>
                     <br/>
-                    <p><strong>DO NOT TURN PAST ANY PAGE THAT IS MARKED</strong></p>
+                    <p style={{textAlign: "center"}}><strong>DO NOT TURN PAST ANY PAGE THAT IS MARKED</strong></p>
                     <br/>
                     <p>
                     The Game is sectioned into rounds and starts with Round 1.
@@ -46,10 +45,11 @@ const News = props => {
                     should reveal a clue about someone other than themselves.
                     </p>
                     <br/>
-                    <p><strong>Two types of clues exist in this game</strong></p>
+                    <p style={{textAlign: "center"}}><strong>Two types of clues exist in this game</strong></p>
                     <ol>
                         <li>
-                        A clue about someone other than yourself. <br />
+                        <strong>A clue about someone other than yourself</strong>
+                        <br />
                         Example "You saw Mary kissing John on the set last week,
                         when Phil walked in the door and Mary abruptly broke off
                         the kiss."
@@ -59,7 +59,8 @@ const News = props => {
                         </li>
                         <br/>
                         <li>
-                        A clue about yourself <br />
+                        <strong>A clue about yourself</strong> 
+                        <br />
                         Example: "You own a fuzzy pink teddy bear. It is soft,
                         cuddly and has a hidden pocket in which you keep a
                         diamond brooch."<br />
