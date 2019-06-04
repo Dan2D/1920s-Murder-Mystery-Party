@@ -14,3 +14,9 @@ background: var(--bg-color);
 overflow-y: auto;
 z-index:-2;
 }
+
+@media only screen and (max-width : 468px) {
+    div.bg-container img[data-img=news]{
+        left: -30vw;
+    }
+}

@@ -98,3 +98,9 @@ div.modal-container.open {
     transition: opacity 400ms ease;
 }
 
+@media only screen and (max-width: 450px) {
+    div.modal-container {
+        top: 20vh;
+        width: 75vw;
+    }
+}

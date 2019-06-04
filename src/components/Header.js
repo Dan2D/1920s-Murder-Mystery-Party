@@ -4,7 +4,7 @@ import Nav from "./header/nav/Nav";
 const Header = props => {
     return(
         <div className="header-container">
-            <Nav onClick={props.onClick}/>
+            <Nav content={props.content} onClick={props.onClick}/>
         </div>
     )
 }

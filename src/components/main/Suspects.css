@@ -94,3 +94,11 @@ div.secret-container p {
     line-height: 150%;
 }
 
+@media only screen and (max-width: 468px){
+
+    div.profile-img{
+        min-height: 35px;
+        min-width: 35px;
+    }
+}
+

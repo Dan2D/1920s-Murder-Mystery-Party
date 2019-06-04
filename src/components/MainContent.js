@@ -8,11 +8,17 @@ import {Transition} from "react-spring/renderprops";
 import "./MainContent.css"
 
 function MainContent(props) {
-    const state = props.state;
+    const content = props.content;
 
     useEffect(() => {
         let content = document.querySelector("div.mainContent-container");
         content.scrollTo(0,0);
+        var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+        var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        document.documentElement.style.width = w;
+        document.documentElement.style.height = h;
+        document.querySelector("body").style.width = w;
+        document.querySelector("body").style.height = h;
       }
     );
 //----------------FUNCTIONS--------------------//
@@ -56,13 +62,13 @@ function MainContent(props) {
                                onClose={modalClose}/>
                 <div className="content">
                     <Transition
-                        items={state}
+                        items={content}
                         from={{transform: 'translateX(100%)'}}
                         enter={{transform: 'translateX(0%)', position: 'absolute', top: 0}}
                         leave={{transform: 'translateX(-110%)'}}>
-                        {state => state && (props => 
+                        {content => content && (props => 
                         <div style={props}>
-                            {state === "news" ? <News /> : state === "suspects" ? <Suspects onClick={modalHandle}/> : <Home />}
+                            {content === "news" ? <News /> : content === "suspects" ? <Suspects onClick={modalHandle}/> : <Home />}
                             <Footer />
                         </div>)
                         }

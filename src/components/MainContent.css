@@ -15,6 +15,7 @@ div.mainContent-container {
 
 p, li, h2, h3, button {
     font-family: core-deco, 'Courier New', Courier, monospace;
+    line-height: 2.5vh;
 }
 /* TODO(FIX FONT-SIZE, NEEDS TO BE SMALLER, CREATE HEIRARCHY) */
 p, li {
@@ -42,5 +43,25 @@ div.content {
     order:1;
 }
 
+@media only screen and (min-width : 600px) and  (max-width : 980px) {
+    
+    p, li, h2, h3, button {
+        line-height: 2.5vh;
+    }
 
+    p, li {
+        font-size: 20px;
+    }
+}
 
+@media only screen and (max-width: 468px) {
+   
+    p, li, h2, h3, button {
+        line-height: 2.5vh;
+    }
+
+    p, li {
+        font-size: 15px;
+    }
+
+}

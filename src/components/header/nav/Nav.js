@@ -17,26 +17,31 @@ class Nav extends Component {
         let root = document.documentElement;  
         function winWidth() {       
             let winWidth = window.innerWidth;
-            return winWidth
+            return winWidth;
         };
+        function setDynTtlPos(windowWidth){
+            windowWidth > 468 ? 
+            root.style.setProperty("--title-pos",  winWidth()*(0.018) + 10 + "px") :
+            root.style.setProperty("--title-pos",  winWidth()*(0.018) + 8 + "px");
 
-        root.style.setProperty("--title-pos",  winWidth()*(0.018) + 10 + "px");
-        root.style.setProperty("--sub-menu-pos", winWidth()*(0.112) - 39 + "px");
-
+        }
+        function setDynSubMnuPos(windowWidth) {
+            root.style.setProperty("--sub-menu-pos", winWidth()*(0.112) - 39 + "px");
+        }
+        setDynTtlPos(winWidth());
+        setDynSubMnuPos(winWidth());
         window.addEventListener("resize", e => {
-            let width = winWidth();
-            root.style.setProperty("--title-pos", width*(0.018) + 10 + "px");
-            root.style.setProperty("--sub-menu-pos", width*(0.112) - 39 + "px");
+            let windowWidth = winWidth();
+            setDynTtlPos(windowWidth);
+            setDynSubMnuPos(windowWidth);
         });  
     }
 
-
-    isGuideBtnFocusedHandler = () => {
-        this.setState({isSubMenuOpen: false})
-    }
-
-    subMenuClickHandler = () => {
-        this.setState(prevState => ({isSubMenuOpen: !prevState.isSubMenuOpen}));
+    subMenuClickHandler = (action) => {
+        if (window.innerWidth > 468  && action === "blur") {
+            return null;
+        }
+        return this.setState(prevState => ({isSubMenuOpen: !prevState.isSubMenuOpen}));
     }
 
     render(){            
@@ -44,7 +49,7 @@ class Nav extends Component {
         <div className="nav-container">
             <nav>
                 <div className="nav-top">
-                    <NavLnks onClick={this.props.onClick}/>
+                    <NavLnks content={this.props.content} onClick={this.props.onClick}/>
                     <NavBtns onClick={this.subMenuClickHandler} />
                 </div>
                 <div className="nav-bottom">

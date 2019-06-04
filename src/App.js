@@ -26,8 +26,8 @@ class App extends Component {
     }
 
     contentHandler = (pageState) => {
-        var main = document.getElementsByClassName("App");
-        main[0].scrollTo(0,0);
+      // document.querySelector("div.navLnks-container").style.textShadow = "none";
+      // document.querySelector('a[data-ref=' + pageState + ']').style.textShadow = "0px 0px 10px currentColor, -0px -0px 10px currentColor";
         var backgroundImg = pageState === "news" ? newsBg : pageState === "suspects" ? suspectsBg : homeBg;
         this.setState({content: pageState, bg: backgroundImg});
     }
@@ -46,18 +46,18 @@ class App extends Component {
       }
     return (
       <div className="App">
-        <Header onClick={this.contentHandler}/>
-        <MainContent state={this.state.content}/>
+        <Header onClick={this.contentHandler} content={this.state.content}/>
+        <MainContent content={this.state.content}/>
         <Transition
           items={content}
           from={{opacity: 0, transform: 'translateX(100%)'}}
           enter={{opacity: 1, transform: 'translateX(0%)', zIndex: 0}}
           leave={{opacity: 0, transform: 'translateX(-100%)'}}>
             {content => content && (props =>
-              <div style={props}>
-                {content === "news" ? <img src={newsBg} style={style} alt="detective"/> : 
-                content === "suspects" ? <img src={suspectsBg} style={style} alt="suspicious man"/> : 
-                <img src={homeBg} style={style} alt="flapper girl"/>}
+              <div style={props} className="bg-container">
+                {content === "news" ? <img src={newsBg} style={style} data-img="news" alt="detective"/> : 
+                content === "suspects" ? <img src={suspectsBg} style={style} data-img="suspects" alt="suspicious man"/> : 
+                <img src={homeBg} style={style} data-img="home" alt="flapper girl"/>}
               </div>)
             }
         </Transition>  
