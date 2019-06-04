@@ -26,8 +26,6 @@ class App extends Component {
     }
 
     contentHandler = (pageState) => {
-      // document.querySelector("div.navLnks-container").style.textShadow = "none";
-      // document.querySelector('a[data-ref=' + pageState + ']').style.textShadow = "0px 0px 10px currentColor, -0px -0px 10px currentColor";
         var backgroundImg = pageState === "news" ? newsBg : pageState === "suspects" ? suspectsBg : homeBg;
         this.setState({content: pageState, bg: backgroundImg});
     }

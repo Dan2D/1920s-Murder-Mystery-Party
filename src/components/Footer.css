@@ -41,3 +41,14 @@ div.footer-text {
 div.footer-text h4, div.footer-text p {
     margin: 0 0 0 25px;
 }
+
+@media only screen and (max-width: 468px) {
+
+    img.stars {
+        min-width: 150px;
+    }
+
+    div.footer-text {
+        width: 110%;
+    }
+}

@@ -24,6 +24,7 @@ p, li {
 
 h2 {
     font-size: calc(20px + 0.8vw);
+    padding-top: 10px;
 }
 
 h3{

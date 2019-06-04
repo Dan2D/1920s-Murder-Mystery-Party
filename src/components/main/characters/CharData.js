@@ -18,7 +18,7 @@ const charData = [
       occupation: "Actor",
       homeTown: "Hollywood, Ca",
       chars: "Handsome, Sophisticated, Confident, Aloof, Mysterious",
-      secret: `You are one of the top action stars of the times.... and you have a blatant speechnimpediment, though this fact is generally unknown.       (This is essential to the plot. It can be a lisp, stutter, squeaky or nasally voice or any kind of voice pattern out of the ordinary)
+      secret: `You are one of the top action stars of the times.... and you have a blatant speech impediment, though this fact is generally unknown.       (This is essential to the plot. It can be a lisp, stutter, squeaky or nasally voice or any kind of voice pattern out of the ordinary)
 
       Though, fate has been kind to you and handed you a part to play in the age of silent movies. As a result of your attempts to hide your speech impediment oustide the stage, you've become regarded as aloof and mysterious, which has only added to your fame. Starring in silent movies such as Times and Seasons, Destiny takes a Hand, and Flying Aces, Matt Montgomery became synonymous with action and heroism.
 

@@ -10,9 +10,9 @@ const NavLnks = (props) => {
 
     return(
         <div className="navLnks-container">
-            <a href="#" style={props.content === "home" ? lightUpStyle : null} onClick={() => props.onClick("home")}>home</a>
-            <a href="#"  style={props.content === "news" ? lightUpStyle : null} onClick={() => props.onClick("news")}>news</a>
-            <a href="#" style={props.content === "suspects" ? lightUpStyle : null} onClick={() => props.onClick("suspects")}>suspects</a>
+            <button href="#" style={props.content === "home" ? lightUpStyle : null} onClick={() => props.onClick("home")}>home</button>
+            <button href="#"  style={props.content === "news" ? lightUpStyle : null} onClick={() => props.onClick("news")}>news</button>
+            <button href="#" style={props.content === "suspects" ? lightUpStyle : null} onClick={() => props.onClick("suspects")}>suspects</button>
         </div>
     )
 }
