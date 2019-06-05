@@ -2,20 +2,11 @@
 div.home-container {
     z-index: 1;
     position: relative;
-    width: 100vw;
     background: rgba(0,0,0,0.5);
+    margin: 0 20%;
     padding-bottom: 5%;
 }
 
-div.frosted-glass {
-    position:absolute;
-    width:110%;
-    height:100%;
-    z-index: -1;
-    margin-left: -5.5%;
-    background: rgba(0,0,0,0.5);
-    filter: blur(2.5px)
-}
 /* TODO (ADD FALLBACK FONTs) */
 .home-container h2 {
     text-decoration: underline;
@@ -24,4 +15,17 @@ div.frosted-glass {
 
 .home-container p {
     margin: 0 5%;  
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 468px) {
+    div.home-container {
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    div.home-container {
+        margin: 0 2%;
+    }
+
 }

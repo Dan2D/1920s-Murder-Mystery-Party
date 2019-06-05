@@ -5,7 +5,6 @@ const Home = props => {
 
     return(
         <div className="home-container">
-            {/* <div className="frosted-glass"></div> */}
             <h2>INTRO</h2>
             <p>
                 The year is 1927. The Great War ended over 8 years ago, and

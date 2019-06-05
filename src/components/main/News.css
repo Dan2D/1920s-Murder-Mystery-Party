@@ -1,9 +1,7 @@
-ol {
-    padding-left: 5%;
-}
+
 
 div.news-container {
-    width: 100vw;
+    margin: 0 20%;
 }
 
 .news-container h2 {
@@ -13,5 +11,21 @@ div.news-container {
 .rulesIntro-container, .rulesSpec-container {
     background: rgba(0,0,0,0.5);
     margin-bottom: 5%;
-    padding: 2% 5%;
+    padding: 1% 3%;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 468px) {
+    div.news-container {
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    div.news-container {
+        margin: 0 2%;
+    }
+
+    ol {
+        padding-left: 5%;
+    }
 }

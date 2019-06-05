@@ -14,14 +14,31 @@ function ModalPass (props) {
 
   return (
     <div className="modal-container closed">
-      <img className="door-img" src={doorSlot} alt="door slide"/>
+      <img 
+        className="door-img" 
+        src={doorSlot} 
+        alt="door slide"/>
       <div className="modal-header">
         <h4>WHAT'S THE PASSWORD?</h4>
-        <button aria-label="close" onClick={(e) => props.onClose(e)}><span aria-hidden="true">X</span></button>
+        <button 
+          aria-label="close" 
+          onClick={(e) => props.onClose(e)}>
+            <span aria-hidden="true">X</span>
+        </button>
       </div>
       <div className="modal-body">
-        <input type="text" label="password-input" onKeyDown={(e) => handleInput(e)}/>
-        <button className="modal-submit" onClick={() => props.onClick() }>SUBMIT</button>
+        <label htmlFor="password"></label>
+        <input 
+          id="password"
+          type="text" 
+          aria-label="password-input" 
+          onKeyDown={(e) => handleInput(e)}/>
+        <button 
+          className="modal-submit" 
+          label="submit"
+          onClick={() => props.onClick() }>
+            SUBMIT
+        </button>
       </div>
     </div>
   )

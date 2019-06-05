@@ -11,7 +11,7 @@
 
 div.App {
 background: var(--bg-color);
-overflow-y: hidden;
+overflow: hidden;
 z-index:-2;
 }
 

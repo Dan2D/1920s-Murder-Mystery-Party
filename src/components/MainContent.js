@@ -4,7 +4,7 @@ import Home from "./main/Home";
 import News from "./main/News";
 import Suspects from "./main/Suspects";
 import PasswordModal from "./modal/Modal";
-import {Transition, animated} from "react-spring/renderprops";
+import {Transition} from "react-spring/renderprops";
 import "./MainContent.css"
 
 function MainContent(props) {
@@ -39,13 +39,11 @@ function MainContent(props) {
             var secretTxt = document.querySelectorAll("div.secret-container");
             for (let i = 0; i < passwordArr.length; i++){
                 if (password === passwordArr[i]) {
-                    secretTxt[i+1].className = "secret-container open"; 
+                    secretTxt[i].className = "secret-container open"; 
                     if (password === "double agent"){
                         document.querySelector('div.character-info[data-char="Ramona Simpson"]').style.display = "block";
-                        secretTxt[i+2].className = "secret-container open"; 
-                    }
-
-                                     
+                        secretTxt[i+1].className = "secret-container open"; 
+                    }               
                 }
             }
         }        
@@ -59,16 +57,15 @@ function MainContent(props) {
                                onClose={modalClose}/>
                 <div className="content">
                     <Transition
-                        native
                         items={content}
-                        from={{transform: 'translateX(100%)'}}
-                        enter={{transform: 'translateX(0%)', position: 'absolute', top: 0}}
-                        leave={{transform: 'translateX(-110%)'}}>
+                        from={{opacity: 0}}
+                        enter={{opacity: 1, position: 'absolute', top: 0, width: '100%'}}
+                        leave={{opacity: 0}}>
                         {content => content && (props => 
-                        <animated.div style={props}>
+                        <div style={props}>
                             {content === "news" ? <News /> : content === "suspects" ? <Suspects onClick={modalHandle}/> : <Home />}
                             <Footer />
-                        </animated.div>)
+                        </div>)
                         }
                     </Transition>
                 </div>

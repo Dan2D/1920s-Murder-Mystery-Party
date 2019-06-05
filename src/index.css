@@ -10,6 +10,7 @@ html, body, div#root {
 
 body {
   background: #0C364E;
+  position: relative;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",

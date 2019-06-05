@@ -51,6 +51,7 @@ const Character = props => {
           </ul>
         </div>
       </div>
+      {props.status === "Victim" ? null : 
       <div className="secret-container" 
            data-char={props.name}>
         <h4>Secret Character Info</h4>
@@ -59,7 +60,7 @@ const Character = props => {
         {props.costume ? <h4>Costume Guidelines</h4> : null}
         <p>{props.costume}</p> 
 
-      </div>
+      </div>}
     </div>
   );
 };
