@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4607e127b0ad7c2076ac8efb0d4fb141",
+    "revision": "ee7863cebfd88e5cb00ddc44bbf41ebb",
     "url": "/1920s-Murder-Mystery-Party/index.html"
   },
   {
-    "revision": "9087a062b34b0f62edc5",
-    "url": "/1920s-Murder-Mystery-Party/static/css/main.ce5b428b.chunk.css"
+    "revision": "c9b2c2055ba417a4e92c",
+    "url": "/1920s-Murder-Mystery-Party/static/css/main.33822b96.chunk.css"
   },
   {
     "revision": "2ec3cd1c22780ac4efbf",
     "url": "/1920s-Murder-Mystery-Party/static/js/2.4c5cc1f0.chunk.js"
   },
   {
-    "revision": "9087a062b34b0f62edc5",
+    "revision": "c9b2c2055ba417a4e92c",
     "url": "/1920s-Murder-Mystery-Party/static/js/main.48cc084b.chunk.js"
   },
   {
