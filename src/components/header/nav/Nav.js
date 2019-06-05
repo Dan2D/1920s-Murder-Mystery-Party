@@ -15,15 +15,23 @@ class Nav extends Component {
 
     componentDidMount() {
         let root = document.documentElement;  
+        const isIEorEdge = /msie\s|trident\/|edge\//i.test(window.navigator.userAgent);
+
         function winWidth() {       
             let winWidth = window.innerWidth;
             return winWidth;
         };
         function setDynTtlPos(windowWidth){
-            windowWidth > 468 ? 
-            root.style.setProperty("--title-pos",  winWidth()*(0.018) + 10 + "px") :
-            root.style.setProperty("--title-pos",  winWidth()*(0.018) + 8 + "px");
-
+            if (isIEorEdge){
+                windowWidth > 468 ? 
+                root.style.setProperty("--title-pos",  winWidth()*(0.019) + 13 + "px") :
+                root.style.setProperty("--title-pos",  winWidth()*(0.019) + 10 + "px");
+            }
+            else {
+                windowWidth > 468 ? 
+                root.style.setProperty("--title-pos",  winWidth()*(0.018) + 10 + "px") :
+                root.style.setProperty("--title-pos",  winWidth()*(0.018) + 8 + "px");
+                }
         }
         function setDynSubMnuPos(windowWidth) {
             root.style.setProperty("--sub-menu-pos", winWidth()*(0.112) - 39 + "px");
@@ -31,7 +39,9 @@ class Nav extends Component {
         setDynTtlPos(winWidth());
         setDynSubMnuPos(winWidth());
         window.addEventListener("resize", e => {
+            
             let windowWidth = winWidth();
+            console.log(windowWidth);
             setDynTtlPos(windowWidth);
             setDynSubMnuPos(windowWidth);
         });  

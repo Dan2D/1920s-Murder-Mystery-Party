@@ -5,7 +5,10 @@ import News from "./main/News";
 import Suspects from "./main/Suspects";
 import PasswordModal from "./modal/Modal";
 import {Transition} from "react-spring/renderprops";
+import smoothscroll from "smoothscroll-polyfill";
 import "./MainContent.css"
+
+smoothscroll.polyfill();
 
 function MainContent(props) {
     const content = props.content;
@@ -13,6 +16,7 @@ function MainContent(props) {
     useEffect(() => {
         let content = document.querySelector("div.mainContent-container");
         content.scrollTo(0,0);
+        
         let height = document.documentElement.clientHeight;
         document.documentElement.style.setProperty("--client-height", height + 5 + "px");
       }
@@ -34,7 +38,7 @@ function MainContent(props) {
     function passwordSubmitHandler() {
         let password = document.querySelector("div.modal-body>input").value;
         password = password.toLowerCase();
-        let passwordArr=["shhh", "dope fiend", "scarlet songbird", "double agent", "evil twin", "akvavit", "cancelled stamp", "fatal attraction", "clothesline", "heavy sugar", "heebie jeebies"];
+        let passwordArr=["shhh", "dope fiend", "scarlet songbird", "double agent", "---secret---", "akvavit", "cancelled stamp", "fatal attraction", "clothesline", "heavy sugar", "heebie jeebies"];
         function passwordCheck(password) {
             var secretTxt = document.querySelectorAll("div.secret-container");
             for (let i = 0; i < passwordArr.length; i++){

@@ -1,7 +1,4 @@
 
-:root {
-    --bg-color: rgba(12,54,78);
-}
 
 @font-face {
     font-family: "core-deco";
@@ -10,7 +7,7 @@
 }
 
 div.App {
-background: var(--bg-color);
+background: rgba(12,54,78);
 overflow: hidden;
 z-index:-2;
 }

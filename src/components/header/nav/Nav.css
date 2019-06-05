@@ -2,7 +2,6 @@
     --light-color: #F0FF45;
     --sub-menu-pos: 45px;
     --title-pos: 135px;
-    --bg-color: rgba(12,54,78);
 }
 
 /*---------------------------------------
@@ -52,7 +51,7 @@ div.header-container {
 
 div.nav-container {
     position: fixed;
-    background: var(--bg-color);
+    background: rgb(12,54,78);
     width: 100vw;
     right: 24px;
 }
@@ -104,7 +103,7 @@ div.navBtns-container {
     background: #D9C76C;
     border: none;
     border-radius: 5px;
-    color: var(--bg-color);
+    color: rgb(12,54,78);
 }
 
 div.navBtns-container button img {
@@ -175,7 +174,7 @@ div.light-container {
 
 #title-light-figure {
     position: absolute;
-    top: -12px;
+    top: calc(-20px - 0.1vw);
     right: 5px;
     z-index: 1;
     width: 3%;
@@ -190,7 +189,7 @@ div.light-container {
 div.title-container h1 {
     z-index: 3;
     position:fixed;
-    color: var(--bg-color);
+    color: rgb(12,54,78);
     font-size: 3.5vw;
     line-height: 3.5vw;
     left: 5px;

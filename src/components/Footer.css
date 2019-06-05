@@ -1,7 +1,7 @@
 
 div.footer-container {
-    position: relative;
-    order: 1;
+    /* position: relative;
+    order: 1; */
     width: 100vw;
 }
 
@@ -11,7 +11,7 @@ div.position-container {
     justify-content: flex-start;
     align-content: flex-start;
     margin-left: -6px;
-    width: 100%;
+    /* width: 100%; */
 }
 
 img.stars {
@@ -43,7 +43,6 @@ div.footer-text {
     z-index: 1; 
     margin-left:-5px;
     width: 85%;
-    font-family: core-deco, Arial, Helvetica, sans-serif;
 }
 
 div.footer-text h4, div.footer-text p {

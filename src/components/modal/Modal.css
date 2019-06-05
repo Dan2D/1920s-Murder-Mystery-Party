@@ -89,8 +89,8 @@ div.modal-container.closed {
     opacity: 0;
     z-index: -1;
     transition: max-height 0ms 2000ms,
-                 opacity 400ms ease 1000ms,
-                  z-index 0ms ease 1000ms;
+                opacity 400ms ease 1000ms,
+                z-index 0ms ease 1000ms;
 }
 
 div.modal-container.open {
@@ -99,7 +99,7 @@ div.modal-container.open {
     transition: opacity 400ms ease;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 468px) {
     div.modal-container {
         top: 20vh;
         width: 75vw;

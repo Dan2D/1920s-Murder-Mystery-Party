@@ -1,5 +1,5 @@
 import React from "react";
-import hollywoodHills from "../images/bg/Hollywood-Sign.svg";
+import hollywoodHills from "../images/bg/Hollywood-Sign.png";
 import stars from "../images/bg/Stars.svg"
 import mapsIcon from "../images/ui/mapsIcon.png";
 import "./Footer.css"

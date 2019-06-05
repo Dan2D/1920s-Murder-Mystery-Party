@@ -37,10 +37,12 @@ button.guide-text {
     height: auto;
     width: 23vw;
     right: 650px;
+    top: -5px;
     text-align: center;
     border-radius: 5px;
     padding: 5px;
     font-size: calc(10px + 0.8vw);
+    z-index:-1;
     opacity: 0;
     transition: opacity 400ms ease;
 }
@@ -48,6 +50,7 @@ button.guide-text {
 button.guide-text:focus {
     top: -5px;
     opacity: 1;
+    z-index: 1;
 }
 
 div.character-info[data-status=Victim]>button{
@@ -65,7 +68,7 @@ display: inline;
 
 div.profile-img {
     display: inline-block;
-    margin-right: 1em;
+    margin-right: 15px;
     vertical-align: middle;
 }
 
@@ -79,7 +82,6 @@ div.secret-container {
     max-height:0;
     padding: 2% 5%;
     overflow:hidden;
-    /* margin-left: -4%; */
 }
 
 div.secret-container.open {
@@ -115,7 +117,7 @@ div.secret-container p {
     }
 }
 @media only screen and (max-width: 468px){
-    
+
     div.profile-img {
         min-height: 35px;
         min-width: 35px;
