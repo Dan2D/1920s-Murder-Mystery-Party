@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "core-deco";
+  font-display: swap;
+  src: url("./fonts/Core-Deco.ttf")
+}
+
 html, body, div#root {
   min-height:100%;
   min-width: 100%;
@@ -28,11 +34,3 @@ div#root {
   height:100%;
   width: 100%;
 }
-
-/* div#root {
-  z-index: 0;
-background: url("./images/bg/Poster-Rules.png");
-background-position: bottom;
-background-size: 90vh;
-background-repeat: no-repeat;
-} */

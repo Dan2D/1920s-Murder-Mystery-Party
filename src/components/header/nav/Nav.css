@@ -130,8 +130,8 @@ div.subMenu-container, div.subMenu-container-open {
     justify-content: space-between;
     width: 50vw;
     top: var(--sub-menu-pos);
+    z-index:  5;
     right: 45%;
-    z-index: 5;
     transform: translateY(20px) rotate(-4.3deg);
     transition:  transform 400ms ease-out;
 }
@@ -143,10 +143,15 @@ div.subMenu-container a, div.subMenu-container-open a {
     transition: opacity 200ms ease;
 }
 
+div.subMenu-container a {
+    pointer-events: none;
+}
+
 div.subMenu-container-open{
     transform: translateY(5px) rotate(-4.3deg);
     transition: transform 400ms ease-out;
     visibility: visible;
+
 }
 
 div.subMenu-container-open a {
@@ -203,7 +208,7 @@ div.title-container h1 {
     }
 
 }
-/* TODO(MEDIA QUERIES FOR LANDSCAPE MOBILE 468<X<768) */
+
 @media only screen and (max-width: 468px) {
 
     a, button {
@@ -290,6 +295,7 @@ div.title-container h1 {
         right: -10px;
         font-weight: bolder;
         opacity: 1;
+        z-index: 1;
         transform: scale(1) translateX(0);
     }
     
