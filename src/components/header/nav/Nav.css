@@ -54,7 +54,7 @@ div.nav-container {
     position: fixed;
     background: var(--bg-color);
     width: 100vw;
-    right: 22px;
+    right: 24px;
 }
 
 div.nav-top {

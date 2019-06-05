@@ -25,21 +25,42 @@ img.hollywood {
     align-self: flex-start;
     margin-left:-5px;
     margin-bottom: -5px;
+    max-width:100%;
     z-index: 1;
 }
 
+div.footer-bottom {
+    order:2;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    width: 100%;
+    background: #3b3b3b;
+}
+
 div.footer-text {
-    order: 2;
+    order: 1;
     z-index: 1; 
     margin-left:-5px;
-    width: 100%;   
-    background: #3b3b3b;
-    padding-bottom: 12px;
+    width: 85%;
     font-family: core-deco, Arial, Helvetica, sans-serif;
 }
 
 div.footer-text h4, div.footer-text p {
     margin: 0 0 0 25px;
+}
+
+div.footer-bottom>a {
+    order:2;
+}
+
+div.footer-bottom>a>img{
+    position: absolute;
+    height: calc(20px + 2vw);
+    max-height: 65px;
+    right: 25px;
+    bottom: 0;
+    opacity: 0.7;
 }
 
 @media only screen and (max-width: 468px) {
@@ -48,7 +69,7 @@ div.footer-text h4, div.footer-text p {
         min-width: 150px;
     }
 
-    div.footer-text {
-        width: 110%;
+    div.footer-bottom>a>img{
+        right: 5px;
     }
 }
