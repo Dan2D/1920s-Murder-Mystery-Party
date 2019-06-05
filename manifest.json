@@ -1,5 +1,10 @@
 {
- "name": "App",
+ "name": "1920s-Murder-Mystery-Party",
+  "short_name": "MMP",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff",
+  "description": "Website to set the stage for a murder mystery party.",
  "icons": [
   {
    "src": "\/android-icon-36x36.png",
