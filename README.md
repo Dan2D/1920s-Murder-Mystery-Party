@@ -10,16 +10,27 @@ The sites purpose was to set the stage for the murder mystery, introduce players
 ##Site Interaction
 You can look at a characters secrets/backstory by clicking on the SUSPECTS link followed by clikcing on a character and entering their password.
 
- **Characters             Passwords**
-  Matthew Montgomery      "shhh"
-  Thomas DeWit            "dope fiend"
-  Kathleen O'shea         "scarlet songbird"
-  Betty Sue Wilson        "double agent"
-  Olaf Hendrikssen        "akvavit"
-  Wilbur Andrews          "cancelled stamp"
-  Irma Meyers             "fatal attraction"
-  Alice Chatterly         "clothesline"
-  Clyde Willoughby        "heavy sugar"
-  Giana Del Ricci         "heebie jeebies"
+ **Character Passwords**
+ 
+  Matthew Montgomery = "shhh"
+  
+  Thomas DeWit = "dope fiend"
+  
+  Kathleen O'shea = "scarlet songbird"
+  
+  Betty Sue Wilson = "double agent"
+  
+  Olaf Hendrikssen = "akvavit"
+  
+  Wilbur Andrews = "cancelled stamp"
+  
+  Irma Meyers ="fatal attraction"
+  
+  Alice Chatterly = "clothesline"
+ 
+  Clyde Willoughby = "heavy sugar"
+  
+  Giana Del Ricci = "heebie jeebies"
+  
   
   THANKS TO EVERYONE WHO PLAYED!!
