@@ -7,11 +7,11 @@ Dynamic site built with React and some react-spring.
 
 ## Site Purpose
 
-The sites purpose was to set the stage for the murder mystery, introduce players to the rules of the game, and divulge their characters and secrets to each player without others knowing.
+The sites purpose was to set the stage for the murder mystery, introduce players to the rules of the game, and divulge their characters and secrets to each player without others knowing, and offer guides to help players get into character.
 
 ## Site Interaction
 
-You can look at a characters secrets/backstory by clicking on the SUSPECTS link followed by clikcing on a character and entering their password.
+You can look at a character's secrets/backstory by clicking on the SUSPECTS link followed by clikcing on a character and entering their password.
 
  **Character Passwords**
  
