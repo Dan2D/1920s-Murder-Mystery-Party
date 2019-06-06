@@ -250,13 +250,17 @@ div.title-container h1 {
         flex-direction: column;
         width: auto;
         top: 5vh;
-        right: -110px;
         transform: rotate(0);
         transition: right 800ms ease-in;
+    }
+
+    div.subMenu-container {
+        right: -10px;
     }
     
     div.subMenu-container a, div.subMenu-container-open a {
         color: #0c364e;
+        pointer-events: auto;
         background: #D9C76C;
         text-align: left;
         margin: 1vh 0;
@@ -295,7 +299,7 @@ div.title-container h1 {
         right: -10px;
         font-weight: bolder;
         opacity: 1;
-        z-index: 1;
+        z-index: 55;
         transform: scale(1) translateX(0);
     }
     

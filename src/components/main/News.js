@@ -9,7 +9,7 @@ const News = props => {
             <p>
                 There are 10 supporting players in this murder mystery however
                 the roles you’ll be playing are quite different. Most of you
-                will be attempting to unearth the truth of Andrew J
+                will be attempting to unearth the truth of Andrew J.
                 McCutcheon’s murder, while 1 or more of you, who shall remain
                 un-named... will attempt to disguise that truth and escape the
                 clutches of justice!
@@ -118,7 +118,7 @@ const News = props => {
                     <li>
                     Once everyone has given their answers the host will instruct
                     the players to turn to the last page in their booklet and
-                    read from the section marked SOLUTION. 
+                    read from the section marked <strong>SOLUTION</strong>. 
                     <br /><br />
                     Each player has a part of the solution marked 1 through 8 and
                     should read their part in order.

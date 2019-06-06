@@ -12,7 +12,7 @@ const Home = props => {
                 booming. The dreadful events of 1919, by that I mean Prohibition,
                 is now in full swing, prohibiting any kind of liquor or booze,
                 though this doesn't mean people have stopped drinking. Quite the
-                opposite really! Calving Coolidge, or Silent-Cal as he's known,
+                opposite really! Calvin Coolidge, or Silent-Cal as he's known,
                 is President of the United States along with his co-pres Charles
                 G. Dawes. 
                 <br/><br/>
@@ -24,23 +24,22 @@ const Home = props => {
                 <br/><br/>
                 As I'm sure you've heard by now, Arthur J. McCutcheon is dead,
                 beat down in his own office on the night of August the 2nd,
-                1927. Leiutenant Leonard Collins of the Los Angeles Police
-                department was put in harge of the case. The murder occurred
-                sometime between 7:00pm and
-                9:00pm. It seems
-                McCutcheon had died from a severe blow to the head. When police
-                arrived McCutcheon was found on his casting couch in his leeping
-                gown, his office was full of smoke and some charred remains of
-                blueprints were seen stoking the fireplace. Other notable items
-                found in the office were a string of pearls, a prop dagger and a
-                spilled whiskey glass, along with the charred blueprint remains.
+                1927. Lieutenant Leonard Collins of the Los Angeles Police
+                department was put in charge of the case. The murder occurred
+                sometime between 7:00pm and 9:00pm. It seems McCutcheon had died 
+                from a severe blow to the head. When police arrived McCutcheon 
+                was found on his casting couch in his sleeping gown, his office 
+                was full of smoke and some charred remains of blueprints were 
+                seen stoking the fireplace. Other notable items found in the office
+                 were a string of pearls, a prop dagger, and a spilled whiskey glass,
+                along with the charred blueprint remains.
                 <br/><br/>
                 But enough with the depressing, or depending on your viewpoint...
                 exciting news! Tonight is the night! The Palms is throwing a
                 party in memorium of Arthur J. McCutceon and lucky you, you're
                 invited! Nevermind the fact your invitation came from that copper
                 Collins in charge of investigating the murder case. In fact
-                you're a VIP! A special room at the back of the restaraunt has
+                you're a VIP! A special room at the back of the restaurant has
                 been reserved just for you and your friends to remember the
                 gracious soul Arthur J McCutcheon was. How thoughtful....
                 <br/><br/>
