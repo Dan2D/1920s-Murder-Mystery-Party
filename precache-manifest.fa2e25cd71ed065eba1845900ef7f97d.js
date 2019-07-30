@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1480300b048bfdc1bc73c7b7353aef6c",
+    "revision": "01e1c72349bbca29f79642adf37e5242",
     "url": "/1920s-Murder-Mystery-Party/index.html"
   },
   {
-    "revision": "e5d05c24d07ee5397fac",
-    "url": "/1920s-Murder-Mystery-Party/static/css/main.e3803972.chunk.css"
+    "revision": "4d947e67234cbe5b90af",
+    "url": "/1920s-Murder-Mystery-Party/static/css/main.216f6ab5.chunk.css"
   },
   {
     "revision": "cb9f0f16460489c17257",
     "url": "/1920s-Murder-Mystery-Party/static/js/2.c4507a8b.chunk.js"
   },
   {
-    "revision": "e5d05c24d07ee5397fac",
-    "url": "/1920s-Murder-Mystery-Party/static/js/main.02c5c14f.chunk.js"
+    "revision": "4d947e67234cbe5b90af",
+    "url": "/1920s-Murder-Mystery-Party/static/js/main.8ec9d498.chunk.js"
   },
   {
     "revision": "beff297e898575187a57",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/1920s-Murder-Mystery-Party/static/media/drink.9236939a.png"
   },
   {
-    "revision": "db18727b0dd88317f49dbae10dbbb96f",
-    "url": "/1920s-Murder-Mystery-Party/static/media/home-bg.db18727b.png"
+    "revision": "03e780e0b340b0e90d81cd8693735f64",
+    "url": "/1920s-Murder-Mystery-Party/static/media/home-bg-sml.03e780e0.png"
   },
   {
     "revision": "12daf545981796c515de27ce7473ea8b",
@@ -72,8 +72,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/1920s-Murder-Mystery-Party/static/media/mirror.03743310.png"
   },
   {
-    "revision": "7ac4858974f84cac6f38bb2061da2805",
-    "url": "/1920s-Murder-Mystery-Party/static/media/news-bg.7ac48589.png"
+    "revision": "664a4a6f123b3c6f54e69a1c95c65865",
+    "url": "/1920s-Murder-Mystery-Party/static/media/news-bg-sml.664a4a6f.png"
   },
   {
     "revision": "f78eee8bc380374b9414a07be07919ca",
@@ -84,7 +84,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/1920s-Murder-Mystery-Party/static/media/spirit.4464f012.png"
   },
   {
-    "revision": "2f0f37d0d216c59765f19fd066b0523d",
-    "url": "/1920s-Murder-Mystery-Party/static/media/suspects-bg.2f0f37d0.png"
+    "revision": "97bbbab002a60902ed96a3f109232e48",
+    "url": "/1920s-Murder-Mystery-Party/static/media/suspects-bg-sml.97bbbab0.png"
   }
 ]);
