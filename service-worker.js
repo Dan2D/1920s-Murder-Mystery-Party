@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
 
 importScripts(
-  "/1920s-Murder-Mystery-Party/precache-manifest.de92019814e4c1948d75f3f67857b45c.js"
+  "/1920s-Murder-Mystery-Party/precache-manifest.b7f71e31f1ae240caa0c3c0ed72b11e0.js"
 );
 
 self.addEventListener('message', (event) => {
