@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/1920s-Murder-Mystery-Party/static/css/main.8d0b3b32.chunk.css",
-    "main.js": "/1920s-Murder-Mystery-Party/static/js/main.5e1a9972.chunk.js",
-    "main.js.map": "/1920s-Murder-Mystery-Party/static/js/main.5e1a9972.chunk.js.map",
+    "main.css": "/1920s-Murder-Mystery-Party/static/css/main.c75c70e8.chunk.css",
+    "main.js": "/1920s-Murder-Mystery-Party/static/js/main.fa3f5898.chunk.js",
+    "main.js.map": "/1920s-Murder-Mystery-Party/static/js/main.fa3f5898.chunk.js.map",
     "runtime~main.js": "/1920s-Murder-Mystery-Party/static/js/runtime~main.c291d723.js",
     "runtime~main.js.map": "/1920s-Murder-Mystery-Party/static/js/runtime~main.c291d723.js.map",
     "static/js/2.c4507a8b.chunk.js": "/1920s-Murder-Mystery-Party/static/js/2.c4507a8b.chunk.js",
     "static/js/2.c4507a8b.chunk.js.map": "/1920s-Murder-Mystery-Party/static/js/2.c4507a8b.chunk.js.map",
     "index.html": "/1920s-Murder-Mystery-Party/index.html",
-    "precache-manifest.23f9aad5da6ea93b8d1b58e2fc387ef2.js": "/1920s-Murder-Mystery-Party/precache-manifest.23f9aad5da6ea93b8d1b58e2fc387ef2.js",
+    "precache-manifest.dd71bd84214d398c1e701511bbae5a62.js": "/1920s-Murder-Mystery-Party/precache-manifest.dd71bd84214d398c1e701511bbae5a62.js",
     "service-worker.js": "/1920s-Murder-Mystery-Party/service-worker.js",
-    "static/css/main.8d0b3b32.chunk.css.map": "/1920s-Murder-Mystery-Party/static/css/main.8d0b3b32.chunk.css.map",
+    "static/css/main.c75c70e8.chunk.css.map": "/1920s-Murder-Mystery-Party/static/css/main.c75c70e8.chunk.css.map",
     "static/media/App.css": "/1920s-Murder-Mystery-Party/static/media/Core-Deco.732630b0.ttf",
     "static/media/Hollywood-Sign.png": "/1920s-Murder-Mystery-Party/static/media/Hollywood-Sign.c705dad0.png",
     "static/media/Light-Shape.png": "/1920s-Murder-Mystery-Party/static/media/Light-Shape.f40bf7d0.png",
@@ -18,15 +18,15 @@
     "static/media/abacus.png": "/1920s-Murder-Mystery-Party/static/media/abacus.6c7d455e.png",
     "static/media/broken-heart.png": "/1920s-Murder-Mystery-Party/static/media/broken-heart.5332dcfd.png",
     "static/media/drink.png": "/1920s-Murder-Mystery-Party/static/media/drink.9236939a.png",
-    "static/media/home-bg.png": "/1920s-Murder-Mystery-Party/static/media/home-bg.6592e512.png",
+    "static/media/home-bg.png": "/1920s-Murder-Mystery-Party/static/media/home-bg.6ea386b7.png",
     "static/media/kind.png": "/1920s-Murder-Mystery-Party/static/media/kind.12daf545.png",
     "static/media/lightbulb.png": "/1920s-Murder-Mystery-Party/static/media/lightbulb.8334d357.png",
     "static/media/lips.png": "/1920s-Murder-Mystery-Party/static/media/lips.3752f5cf.png",
     "static/media/medal.png": "/1920s-Murder-Mystery-Party/static/media/medal.541ff316.png",
     "static/media/mirror.png": "/1920s-Murder-Mystery-Party/static/media/mirror.03743310.png",
-    "static/media/news-bg.png": "/1920s-Murder-Mystery-Party/static/media/news-bg.e6f80d3d.png",
+    "static/media/news-bg.png": "/1920s-Murder-Mystery-Party/static/media/news-bg.548429e4.png",
     "static/media/note.png": "/1920s-Murder-Mystery-Party/static/media/note.f78eee8b.png",
     "static/media/spirit.png": "/1920s-Murder-Mystery-Party/static/media/spirit.4464f012.png",
-    "static/media/suspects-bg.png": "/1920s-Murder-Mystery-Party/static/media/suspects-bg.2371c96b.png"
+    "static/media/suspects-bg.png": "/1920s-Murder-Mystery-Party/static/media/suspects-bg.eeb60188.png"
   }
 }
