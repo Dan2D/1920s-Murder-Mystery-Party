@@ -41,7 +41,6 @@ class Nav extends Component {
         window.addEventListener("resize", e => {
             
             let windowWidth = winWidth();
-            console.log(windowWidth);
             setDynTtlPos(windowWidth);
             setDynSubMnuPos(windowWidth);
         });  

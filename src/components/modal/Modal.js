@@ -2,8 +2,6 @@ import React from "react";
 import doorSlot from "../../images/ui/door-slot.jpg";
 import "./Modal.css"
 
-// TODO(CHANGE ALL EVENT HANDLERS NAMING TO START WITH handle)
-// TODO(IF CLASS THEN CAN JUST PASS IN E THROUGH FUNCTION NO NEED TO (e) => {handle(e)})
 function ModalPass (props) {
 
   function handleInput(e) {
@@ -21,9 +19,10 @@ function ModalPass (props) {
       <div className="modal-header">
         <h4>WHAT'S THE PASSWORD?</h4>
         <button 
+          className="modal-close-btn"
           aria-label="close" 
-          onClick={(e) => props.onClose(e)}>
-            <span aria-hidden="true">X</span>
+          onClick={() => props.onClose()}>
+          X
         </button>
       </div>
       <div className="modal-body">

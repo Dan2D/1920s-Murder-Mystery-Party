@@ -255,7 +255,7 @@ div.title-container h1 {
     }
 
     div.subMenu-container {
-        right: -10px;
+        right: -100px;
     }
     
     div.subMenu-container a, div.subMenu-container-open a {

@@ -1,19 +1,69 @@
-
-
 @font-face {
-    font-family: "core-deco";
-    font-display: swap;
-    src: url("./fonts/Core-Deco.ttf")
+  font-family: "core-deco";
+  font-display: swap;
+  src: url("./fonts/Core-Deco.ttf");
 }
 
 div.App {
-background: rgba(12,54,78);
-overflow: hidden;
-z-index:-2;
+  background: rgba(12, 54, 78);
+  overflow: hidden;
+  z-index: -2;
 }
 
-@media only screen and (max-width : 468px) {
-    div.bg-container img[data-img=news]{
-        left: -30vw;
-    }
+.bg {
+  position: absolute;
+  padding-top: 4vw;
+  top: 55px;
+  right: 0;
+  height: 100vh;
+
+  opacity: 0.4;
+}
+
+.push-enter {
+  transform: translate3D(100vw, 0, 0);
+  will-change: transform;
+}
+
+.push-enter-active {
+  transform: translate3D(0, 0, 0);
+  transition: all 500ms ease-in;
+  will-change: transform;
+}
+
+.push-exit {
+  opacity: 0.4;
+  transform: translate3D(0, 0, 0);
+  will-change: transform;
+}
+
+.push-exit-active {
+  transform: translate3D(-100vw, 0, 0);
+  opacity: 0;
+  transition: all 500ms ease-out;
+  will-change: transform;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: all 1000ms ease;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: all 1000ms ease;
+}
+
+@media only screen and (max-width: 468px) {
+  div.bg-container img[data-img="news"] {
+    left: -30vw;
+  }
 }

@@ -4,7 +4,7 @@ import Home from "./main/Home";
 import News from "./main/News";
 import Suspects from "./main/Suspects";
 import PasswordModal from "./modal/Modal";
-import {Transition} from "react-spring/renderprops";
+import {TransitionGroup, CSSTransition} from 'react-transition-group';
 import smoothscroll from "smoothscroll-polyfill";
 import "./MainContent.css"
 
@@ -15,20 +15,20 @@ function MainContent(props) {
 
     useEffect(() => {
         let content = document.querySelector("div.mainContent-container");
-        content.scrollTo(0,0);
+        setTimeout(() => {content.scrollTo(0,0)}, 500);
         
         let height = document.documentElement.clientHeight;
         document.documentElement.style.setProperty("--client-height", height + 5 + "px");
       }
     );
-//----------------FUNCTIONS--------------------//
+
     function modalHandle() {
         let modal = document.querySelector("div.modal-container");
         modal.className = "modal-container open";
         modal.querySelector("input").focus();
     }
 
-    function modalClose(e) {
+    function modalClose() {
         let modal = document.querySelector("div.modal-container");
         let modalInput = document.querySelector("div.modal-body>input");
         modalInput.value = "";
@@ -54,24 +54,20 @@ function MainContent(props) {
         passwordCheck(password);
         modalClose(); 
     }
-
         return(
             <div className="mainContent-container">
                 <PasswordModal onClick={passwordSubmitHandler} 
                                onClose={modalClose}/>
                 <div className="content">
-                    <Transition
-                        items={content}
-                        from={{opacity: 0}}
-                        enter={{opacity: 1, position: 'absolute', top: 0, width: '100%'}}
-                        leave={{opacity: 0}}>
-                        {content => content && (props => 
-                        <div style={props}>
-                            {content === "news" ? <News /> : content === "suspects" ? <Suspects onClick={modalHandle}/> : <Home />}
-                            <Footer />
-                        </div>)
-                        }
-                    </Transition>
+                    <TransitionGroup>
+                            <CSSTransition
+                            key={props.content}
+                            timeout={1000}
+                            classNames="fade">
+                                {content === "news" ? <News /> : content === "suspects" ? <Suspects onClick={modalHandle}/> : <Home />}
+                            </CSSTransition>
+                    </TransitionGroup>
+                    <Footer />
                 </div>
             </div>
         )

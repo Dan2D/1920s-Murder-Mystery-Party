@@ -14,7 +14,7 @@ div.characters-container {
     text-decoration: underline;
 }
 
-button.guide-text::before {
+button.guide-text:before {
     content: "";
     height: 0px;   
     width: 0px;   
@@ -47,7 +47,7 @@ button.guide-text {
     transition: opacity 400ms ease;
 }
 
-button.guide-text:focus {
+div.fade-enter-done button.guide-text:focus {
     top: -5px;
     opacity: 1;
     z-index: 1;
