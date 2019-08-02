@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import NavLnks from "./NavLnks";
-import NavBtns from "./NavBtns";
 import SubMenu from "./SubMenu";
 import Title from "../Title";
 import "./Nav.css";
@@ -13,42 +12,12 @@ class Nav extends Component {
         };
     }
 
-    componentDidMount() {
-        let root = document.documentElement;  
-        const isIEorEdge = /msie\s|trident\/|edge\//i.test(window.navigator.userAgent);
-
-        function winWidth() {       
-            let winWidth = window.innerWidth;
-            return winWidth;
-        };
-        function setDynTtlPos(windowWidth){
-            if (isIEorEdge){
-                windowWidth > 468 ? 
-                root.style.setProperty("--title-pos",  winWidth()*(0.019) + 13 + "px") :
-                root.style.setProperty("--title-pos",  winWidth()*(0.019) + 10 + "px");
-            }
-            else {
-                windowWidth > 468 ? 
-                root.style.setProperty("--title-pos",  winWidth()*(0.018) + 10 + "px") :
-                root.style.setProperty("--title-pos",  winWidth()*(0.018) + 8 + "px");
-                }
-        }
-        function setDynSubMnuPos(windowWidth) {
-            root.style.setProperty("--sub-menu-pos", winWidth()*(0.112) - 39 + "px");
-        }
-        setDynTtlPos(winWidth());
-        setDynSubMnuPos(winWidth());
-        window.addEventListener("resize", e => {
-            
-            let windowWidth = winWidth();
-            setDynTtlPos(windowWidth);
-            setDynSubMnuPos(windowWidth);
-        });  
-    }
-
     subMenuClickHandler = (action) => {
-        if (window.innerWidth > 468  && action === "blur") {
-            return null;
+        if (action === "blur"){
+            if (window.innerWidth > 992) {
+                return null;
+            }
+            return this.setState({isSubMenuOpen: false});
         }
         return this.setState(prevState => ({isSubMenuOpen: !prevState.isSubMenuOpen}));
     }
@@ -58,8 +27,7 @@ class Nav extends Component {
         <div className="nav-container">
             <nav>
                 <div className="nav-top">
-                    <NavLnks content={this.props.content} onClick={this.props.onClick}/>
-                    <NavBtns onClick={this.subMenuClickHandler} />
+                    <NavLnks content={this.props.content} onClick={this.props.onClick} menuClick={this.subMenuClickHandler}/>
                 </div>
                 <div className="nav-bottom">
                     <SubMenu open={this.state.isSubMenuOpen ? "subMenu-container-open" : "subMenu-container"}/>
