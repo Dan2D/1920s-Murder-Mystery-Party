@@ -98,6 +98,8 @@ a {
     width: 2vw;
     min-height: 12px;
     min-width: 12px;
+    max-height: 25px;
+    max-width: 25px;
     padding-right: 1vw;
     vertical-align: middle;
 }

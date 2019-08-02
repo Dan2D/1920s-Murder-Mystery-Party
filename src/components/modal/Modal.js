@@ -1,5 +1,4 @@
 import React from "react";
-import doorSlot from "../../images/ui/door-slot.jpg";
 import "./Modal.css"
 
 function ModalPass (props) {
@@ -14,7 +13,7 @@ function ModalPass (props) {
     <div className="modal-container closed">
       <img 
         className="door-img" 
-        src={doorSlot} 
+        src={require("../../images/ui/door-slot.jpg")} 
         alt="door slide"/>
       <div className="modal-header">
         <h4>WHAT'S THE PASSWORD?</h4>

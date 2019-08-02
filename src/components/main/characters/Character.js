@@ -2,7 +2,7 @@ import React from "react";
 
 import "../Suspects.css";
 const Character = props => {
-  //Function to import all images dynamically given Reacts restrictions
+  
   function importAll(r) {
     let images = {};
     r.keys().map((item) => {
