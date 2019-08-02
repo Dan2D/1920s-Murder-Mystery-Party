@@ -1,4 +1,4 @@
-Dynamic site built with React and some react-spring.
+Dynamic site built with React
 
 ## Visiting the Site
 
