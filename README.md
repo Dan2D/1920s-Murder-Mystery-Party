@@ -2,8 +2,18 @@ Dynamic site built with React
 
 ## Visiting the Site
 
-1. clicking the link hosted on gh-pages [1920s Murder Mystery Party](https://dan2d.github.io/1920s-Murder-Mystery-Party/)
-2. downloading the repo and running 'npm start' from the terminal of your IDE
+A. Click the Link 
+
+[1920s Murder Mystery Party](https://dan2d.github.io/1920s-Murder-Mystery-Party/)
+
+OR
+
+B. Clone the repo
+```
+git clone https://github.com/Dan2D/1920s-Murder-Mystery-Party.git   # Copy project into local directory
+npm install   # Install project dependencies
+npm start   #Runs project site on local server
+```
 
 ## Site Purpose
 
@@ -35,5 +45,10 @@ You can look at a character's secrets/backstory by clicking on the SUSPECTS link
   
   Giana Del Ricci = "heebie jeebies"
   
+  ## Contributors
+  - Dan Schultz - [Portfolio](https://www.danschultz.dev)
+  
   
   THANKS TO EVERYONE WHO PLAYED!!
+  
+  -Dan
