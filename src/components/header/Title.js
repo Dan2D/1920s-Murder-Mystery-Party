@@ -8,7 +8,7 @@ const Title = props => {
             <img className="title-top__door" src={require("../../images/bg/title-door.png")} alt="door"/>
             <div className="title-bottom">
                 <h1 className="title-bottom__title">MURDER MYSTERY PARTY</h1>
-                <img className="title-bottom__light-bg" src={require("../../images/bg/title-light.png")} alt="light-shape"/>
+                <img className="title-bottom__light-bg" src={require("../../images/bg/title-light.svg")} alt="light-shape"/>
             </div>
         </div>
     </div>
