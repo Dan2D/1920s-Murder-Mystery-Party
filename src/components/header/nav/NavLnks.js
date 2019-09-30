@@ -15,6 +15,7 @@ const NavLnks = (props) => {
         <div className="nav-btns-container">
             <button
             className="nav-btn--link" 
+            data-testid="nav-home"
             href="#" 
             style={props.content === home ? lightUpStyle : null} 
             onClick={() => props.onClick(home)}>
@@ -22,6 +23,7 @@ const NavLnks = (props) => {
             </button>
             <button 
             className="nav-btn--link" 
+            data-testid="nav-news"
             href="#"  
             style={props.content === news ? lightUpStyle : null} 
             onClick={() => props.onClick(news)}>
@@ -30,17 +32,19 @@ const NavLnks = (props) => {
             <button 
             className="nav-btn--link" 
             href="#" 
+            data-testid="nav-suspects"
             style={props.content === suspects ? lightUpStyle : null} 
             onClick={() => props.onClick(suspects)}>
                 suspects
             </button>
             <button 
             className="nav-btn--guide" 
+            data-testid="nav-guide"
             onBlur={() => props.menuClick("blur")} 
             onClick={() => props.menuClick("click")}  
             >
                 <img className="nav-btn--guide__question" src={require("../../../images/ui/question-mark.png")} alt="magnifying glass"/>
-                GUIDES
+                <span>GUIDES</span>
             </button>
         </div>
     )

@@ -4,8 +4,9 @@
   "homepage": "http://dan2d.github.io/1920s-Murder-Mystery-Party",
   "private": true,
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "@testing-library/jest-dom": "github:testing-library/jest-dom",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1",
     "react-modal": "^3.8.1",
     "react-scripts": "3.0.0",
     "react-transition-group": "^4.2.1",
@@ -16,7 +17,7 @@
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
+    "test": "jest",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,6 +36,23 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "@testing-library/dom": "^6.4.1",
+    "@testing-library/react": "^9.2.0",
+    "@types/jest": "^24.0.18",
+    "babel-plugin-syntax-class-properties": "^6.13.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-require-context": "^0.1.1",
+    "gh-pages": "^2.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest-dom": "github:testing-library/jest-dom",
+    "react-test-renderer": "^16.10.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
   }
 }
