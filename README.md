@@ -1,4 +1,4 @@
-Dynamic site built with React
+SPA site built with React.js
 
 ## Visiting the Site
 
