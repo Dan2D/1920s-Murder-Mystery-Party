@@ -26,7 +26,7 @@ div.App {
 
 .push-enter-active {
   transform: translate3D(0, 0, 0);
-  transition: all 500ms ease-in;
+  transition: all 0ms cubic-bezier(.52,.91,.36,1);
   will-change: transform;
 }
 
@@ -39,7 +39,7 @@ div.App {
 .push-exit-active {
   transform: translate3D(-100vw, 0, 0);
   opacity: 0;
-  transition: all 500ms ease-out;
+  transition: all 0ms cubic-bezier(.52,.91,.36,1);
   will-change: transform;
 }
 
@@ -64,5 +64,14 @@ div.App {
 @media only screen and (max-width: 468px) {
   div.bg-container img[data-img="news"] {
     left: -30vw;
+  }
+}
+
+@media only screen and (min-width: 468px) {
+  .push-enter-active {
+    transition: all 1000ms cubic-bezier(.52,.91,.36,1);
+  }
+  .push-exit-active {
+    transition: all 1000ms cubic-bezier(.52,.91,.36,1);
   }
 }

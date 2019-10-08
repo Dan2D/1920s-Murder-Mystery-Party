@@ -85,8 +85,9 @@ a {
 }
 
 .nav-btn--guide {
-    margin-top: -25px;
+    margin-top: -20px;
     padding: 5px 5px 0 5px;
+    border-radius: 0 0 4px 4px;
     align-self: center;
     background: #D9C76C;
     color: rgb(12,54,78);
@@ -206,14 +207,14 @@ a {
     z-index: 1;
 }
 
-@media only screen and (min-width: 468px) and (max-width: 992px) {
+@media only screen and (min-width: 468px) {
 
     .nav-btn-container {
         margin-left: 5%;
     }
 
     .title-bottom__title{
-        font-size: 30px;
+        font-size: 4.5vw;
     }
 
     .nav-btn--guide {
@@ -245,11 +246,10 @@ a {
     .title-bottom {
        position: relative;
     }
-    
-    .title-bottom__title{
-        font-size: 36px;
+
+    .nav-btn--guide {
+        padding: 5px;
     }
-        
         
     .subMenu-container, .subMenu-container-open {
         position: absolute;

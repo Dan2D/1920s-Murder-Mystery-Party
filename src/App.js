@@ -56,14 +56,9 @@ class App extends Component {
     return (
       <div className="App">
         <Header onClick={this.contentHandler} content={this.state.content}/>
-        <PasswordModal onClick={this.passwordSubmitHandler} 
-                               onClose={this.modalClose}/>
+        <PasswordModal onClick={this.passwordSubmitHandler} onClose={this.modalClose}/>
         <TransitionGroup>
-          <CSSTransition
-          key={this.state.content}
-          timeout={1500}
-          classNames="push"
-          >
+          <CSSTransition key={this.state.content} timeout={1500} classNames="push">
               <img className="bg" src={require(`./images/bg/${this.state.content}-bg.png`)} data-img={this.state.content} alt={this.state.content}/>
             </CSSTransition>
         </TransitionGroup>  
