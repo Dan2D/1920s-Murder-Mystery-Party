@@ -11,10 +11,10 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
+importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/1920s-Murder-Mystery-Party/precache-manifest.5242a5268f979e9f28bc7b2d96b8c3cf.js"
+  "/1920s-Murder-Mystery-Party/precache-manifest.79d56c6ce7cbc7308ace029176d27978.js"
 );
 
 self.addEventListener('message', (event) => {
